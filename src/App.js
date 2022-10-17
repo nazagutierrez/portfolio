@@ -37,19 +37,22 @@ function App() {
           </div>
         </nav>
 
-        <h1 className="d-flex justify-content-center text-white mt-5 animate__animated animate__fadeInDown">
+        <h1 className="d-flex justify-content-center text-center text-white mt-5 animate__animated animate__fadeInDown">
           Nazareno Gutierrez
         </h1>
-        <p className="d-flex justify-content-center text-white fst-italic fs-5 animate__animated animate__fadeInUp">
+        <p className="d-flex justify-content-center text-center text-white fst-italic fs-5 animate__animated animate__fadeInUp">
           Frontend Developer ReactJS
         </p>
-        <p className="d-flex justify-content-center text-white mt-5">
+        <p className="d-flex text-center text-white mt-5">
           Hello!, I'm a junior/trainee Web Developer with React, my hobbies are
           make solutions and style pages. One of my objetives are be in a kind
           team work in wich I can contribute with my knowledge and may be
           possible learn from them. I'm still studying React to use the 100% of
           it and also ploish my practices
         </p>
+        <h1 className="d-flex fs-3 justify-content-center text-center text-white animate__animated animate__fadeInLeft">
+          My recent work
+        </h1>
         <Cards></Cards>
         
       </div>

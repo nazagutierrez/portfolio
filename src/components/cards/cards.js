@@ -12,7 +12,7 @@ let cards = [{
 {
     id: 2,
     title: "My Portfolio",
-    description: "Description of the project",
+    description: "Maded with ReactJS and styled by Sass",
     url: "#",
     image: image1
 },
@@ -26,10 +26,10 @@ let cards = [{
 
 function Cards() {
   return (
-    <div className="container row">
+    <div className="container row justify-content-center">
         {
             cards.map( (card) => (
-                <div className="card col-4 bg-dark text-white m-2" key={card.id}>
+                <div className="card col-4 bg-dark text-white m-2 mt-3" key={card.id}>
                     <Card title={card.title} description={card.description} url={card.url} image={card.image}></Card>
                 </div>
             ))
