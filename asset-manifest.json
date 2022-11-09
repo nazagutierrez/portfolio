@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.53e45ebe.css",
-    "main.js": "/portfolio/static/js/main.aacefa3a.js",
+    "main.js": "/portfolio/static/js/main.d96cda0a.js",
     "static/media/portfolio-img.png": "/portfolio/static/media/portfolio-img.cf968f1dd10a8d35a63f.png",
     "static/media/coinbase-app-image.png": "/portfolio/static/media/coinbase-app-image.62a13376f55abc973513.png",
     "static/media/tasks-app-image.png": "/portfolio/static/media/tasks-app-image.b4c363da51ff0bb5b104.png",
     "index.html": "/portfolio/index.html",
     "main.53e45ebe.css.map": "/portfolio/static/css/main.53e45ebe.css.map",
-    "main.aacefa3a.js.map": "/portfolio/static/js/main.aacefa3a.js.map"
+    "main.d96cda0a.js.map": "/portfolio/static/js/main.d96cda0a.js.map"
   },
   "entrypoints": [
     "static/css/main.53e45ebe.css",
-    "static/js/main.aacefa3a.js"
+    "static/js/main.d96cda0a.js"
   ]
 }
