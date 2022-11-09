@@ -1,6 +1,6 @@
 # My portfolio
 ## Description
-This is my portfolio, it was maded with Create React App and styled by bootstrap
+This is my portfolio, it was maded with ReactJS and styled by Bootstrap, Framer motion and Sass
 
 ## Author
 **Nazareno Gutierrez**
