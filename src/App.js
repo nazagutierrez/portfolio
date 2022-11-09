@@ -1,5 +1,4 @@
 import "../src/styles/App.scss";
-import images from "./images/imgExports";
 
 import AboutMe from "./components/pages/aboutMe";
 import Cards, { Title } from "./components/pages/projects/cards";

@@ -8,7 +8,7 @@ import gitImg from "./icons8-git-96.png";
 import npmImg from "./icons8-npm-96.png";
 import apiImg from "./icons8-api-64.png";
 import reduxImg from "./icons8-redux-96.png";
-import framerMotion from "./framer-motion-icon.webp";
+import framerMotion from "./framer-motion-icon.png";
 import responsiveDesign from "./icons8-responsive-64.png";
 import language from "./icons8-great-britain-96.png"
 import taskApp from "./tasks-app-image.png";

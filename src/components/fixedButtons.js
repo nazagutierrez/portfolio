@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 
 const FixedButtons = () => {
-  const [t, i18n] = useTranslation("global")
+  const [,i18n] = useTranslation("global")
   return (
     <motion.div
       className="m-2 fixed-bottom d-flex flex-column"
