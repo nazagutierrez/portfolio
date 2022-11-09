@@ -1,0 +1,45 @@
+{
+  "home": {
+    "frontend": "Frontend Developer",
+    "description": "Hello!, I'm a junior/trainee Web Developer with React, I enjoy programming and styling pages.",
+    "nav-link-1": "Home",
+    "nav-link-2": "Projects",
+    "nav-link-3": "About",
+    "nav-link-4": "Skills",
+    "nav-link-5": "Contact"
+  },
+
+  "projects": {
+    "my-projects": "My projects",
+    "visit-page": "Visit page",
+    "source-code": "Source code"
+  },
+
+  "about": {
+    "title": "About me",
+    "description": "I'm a developer passionate about styling pages. One of my objetives are be in a kind team work in wich I can contribute with myknowledge and may be possible learn from them. I'm still practicing to better handle React and also improve my practices. In the future, I'll like to learn Backend, to be a complete developer.",
+    "experience-title": "Experience",
+    "experience": {"exp1": "Personal portfolio from 0", "exp2": "Clone of Coinbase page", "exp3": "Tasks app"},
+    "certificate-title": "Certificates",
+    "certificate" : {"html-css": "HTML and CSS", "git": "GIT"},
+    "education-title": "Education",
+    "education": {"openbootcamp": "I studied in OpenBootcamp", "autodidact": "Autodidact"}
+  },
+
+  "skills": {
+    "title": "My skills"
+  },
+
+  "contact": {
+    "title": "Contact me",
+    "name": "Name",
+    "email": "Email",
+    "comments": "Comments",
+    "submit": "Submit"
+  },
+
+  "footer": {
+      "description": "Portfolio made with ReactJS and styled by Sass, Bootstrap and Framer motion.",
+      "made":" Made by "
+  }
+}

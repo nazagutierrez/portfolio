@@ -1,3 +1,5 @@
+$mainColor: #551f6b;
+$secondaryColor: #623674;
 $tipografia-principal: "Quicksand", sans-serif;
 $tipografia-secundaria: "Montserrat", sans-serif;
 
@@ -6,31 +8,54 @@ html {
 }
 
 body {
-  width: 100%;
-  background-size: 300% 300%;
-  background-image: linear-gradient(
-    -45deg,
-    #03d6e9 0%,
-    #026972 25%,
-    #01484e 50%,
-    #000000 100%
-  );
-  animation: AnimateBG 12s ease infinite;
-  @keyframes AnimateBG { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  // background: #6c70d6 !important;
+  // background: #251B37 !important;
+  animation-iteration-count: 1;
+  // background: linear-gradient(-45deg, #6A00BB, #240530, #6A00BB, #6A00BB);
+  background: linear-gradient(-45deg, #000000, #bf74dd, #000000, #000000);
+  background-size: 400% 400%;
+  animation: gradient 5s ease forwards;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 40% 50%;
+    }
   }
-  // background: linear-gradient(180deg, rgba(24,71,67,1) 4%, rgba(0,0,0,1) 45%, rgba(0,0,0,1) 55%, rgba(24,71,67,1) 96%);
-  // background: linear-gradient(140deg, rgba(0,0,0,1) 0%, rgba(3,8,8,1) 45%, rgba(33,82,87,1) 85%, rgba(46,113,120,1) 96%, rgba(51,132,140,1) 99%);
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
+
+#Projects, #Skills {
+
+  // background: $secondaryColor no-repeat center fixed;
+  // background: #51557E no-repeat center fixed;
+  background-size: cover;
+}
+
+#Projects, #Skills, #Footer {
+  // background: linear-gradient(320deg, rgba(16,11,20,1) 0%, rgba(66,40,76,1) 100%);
+  // background-size: cover;
+  background: linear-gradient(100deg, rgba(16,11,20,1) 0%, rgb(44, 27, 51) 100%);
+  background-size: cover;
+}
+#About, #Contact {
+  background: linear-gradient(100deg, rgba(16,11,20,1) 0%, rgba(66,40,76,1) 100%);
+  background-size: cover;
+}
+
+
+
 
 .App {
   font-family: $tipografia-principal;
-  // background: radial-gradient(circle, rgba(23,53,56,1) 0%, rgba(0,0,0,1) 100%);
 }
 
-.container {
+.contain {
   h1 {
     font-family: $tipografia-secundaria;
   }
@@ -45,14 +70,122 @@ body {
 }
 
 .animate__fadeInLeft {
-    margin-top: 200px;
-    animation-delay: 2s;
+  margin-top: 200px;
+  animation-delay: 2s;
 }
- 
+
 .card {
   width: 15rem !important;
 }
 
+.card-text {
+  min-height: 4.3rem;
+}
+
 .btn-primary {
-    background-color: rgb(2, 123, 134) !important;
+  &:hover {
+    opacity: 0.7;
+    transition: all ease 0.2s;
+  }
+  background-color: $mainColor !important;
+}
+
+.img-fluid {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.07);
+  backdrop-filter: blur(3px);
+  height: 3.5rem;
+}
+
+#floatingTextarea {
+  min-height: 170px;
+}
+
+.form-control,
+.submit {
+  background-color: $secondaryColor !important;
+  border-color: $secondaryColor !important;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 0px 20px $secondaryColor !important;
+  }
+}
+
+.fixed-bottom {
+  right: auto !important;
+}
+
+.social-icon {
+  right: auto;
+  width: 2.6rem !important;
+  height: 2.6rem;
+}
+
+.nav-item {
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 0.8 !important;
+    // color: black !important;
+    transition: all 0.4s;
+  }
+}
+
+
+.nav-link {
+  position: relative;
+  transition: all 0.5s;
+  &::after {
+    transition: all 0.5s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: "";
+    background: #aaa;
+    height: 1px;
+  }
+
+  &:hover {  
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+#Footer {
+  min-height: 30vh !important;
+}
+
+.lng-btns {
+  color: white;
+  
+  label {
+    color: gray ;
+
+    &:hover {
+      color: white !important;
+    }
+  }
+}
+
+.map-img {
+  min-width: 110px !important;
+}
+
+.skill-card {
+  width: 7rem !important;
 }

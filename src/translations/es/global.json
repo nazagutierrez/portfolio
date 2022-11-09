@@ -1,0 +1,45 @@
+{
+    "home": {
+        "frontend": "Desarrollador Frontend",
+        "description": "Hola!, soy un Desarrollador Web junior/trainee con React, disfruto programar y estilar paginas.",
+        "nav-link-1": "Inicio",
+        "nav-link-2": "Proyectos",
+        "nav-link-3": "Sobre mi",
+        "nav-link-4": "Habilidades",
+        "nav-link-5": "Contacto"
+    },
+
+    "projects": {
+        "my-projects": "Mis projectos",
+        "visit-page": "Visítala",
+        "source-code": "Código"
+    },
+
+    "about": {
+        "title": "Sobre mi",
+        "description": "Soy un desarrollador apasionado por el diseño de páginas. Uno de mis objetivos es estar en un equipo de trabajo amable en el que pueda aportar mis conocimientos y sea posible aprender de ellos. Sigo practicando para mejorar en React y también mis prácticas. En el futuro me gustaría aprender Backend, para ser un desarrollador completo.",
+        "experience-title": "Experiencia",
+        "experience": {"exp1": "Portafolio personal desde 0", "exp2": "Clon de la página de Coinbase", "exp3": "Aplicación de tareas"},
+        "certificate-title": "Certificados",
+        "certificate" : {"html-css": "HTML y CSS", "git": "GIT"},
+        "education-title": "Educación",
+        "education": {"openbootcamp": "Estudié en OpenBootcamp", "autodidact": "Autodidacta"}
+    },
+
+    "skills": {
+        "title": "Mis habilidades"
+    },
+
+    "contact": {
+        "title": "Contactame",
+        "name": "Nombre",
+        "email": "Email",
+        "comments": "Comentarios",
+        "submit": "Enviar"
+    },
+
+    "footer": {
+        "description": "Desarrollador Frontend con ReactJS, amante de hacer soluciones y estilar paginas.",
+        "made":" Hecho por "
+    }
+}

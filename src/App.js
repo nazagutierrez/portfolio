@@ -1,65 +1,77 @@
 import "../src/styles/App.scss";
-import { Routes, Route, Link } from "react-router-dom";
+import images from "./images/imgExports";
 
 import AboutMe from "./components/pages/aboutMe";
-import Cards from "./components/cards/cards";
+import Cards, { Title } from "./components/pages/projects/cards";
+import { motion, useAnimation } from "framer-motion";
+import Contact, { ReachMe } from "./components/pages/contact";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+import FixedButtons from "./components/fixedButtons";
+import Nav, { Description, Me } from "./components/pages/home";
+import Footer from "./components/pages/footer";
+import Skills, { SkillsTitle } from "./components/pages/skills/skills";
+
+function Box({ page, delay, finalX, initialX }) {
+  const animation = useAnimation();
+  const [ref, inView] = useInView({
+    threshold: 0.2,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: 1,
+        x: finalX,
+        transition: { duration: 0.8, delay: delay },
+      });
+    }
+  }, [animation, inView, delay, finalX]);
+
+  return (
+    <motion.div
+      ref={ref}
+      animate={animation}
+      initial={{ opacity: 0, x: initialX }}
+    >
+      {page}
+    </motion.div>
+  );
+}
 
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <nav className="navbar navbar-expand-lg rounded">
-          <div className="container-fluid">
-            <div className="collapse navbar-collapse justify-content-center">
-              <ul className="navbar-nav mb-5">
-                <li className="nav-item">
-                  <Link to="/" className="nav-link text-white fs-6" href="/">
-                    Home
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link text-white fs-6" href="#">
-                    Projects
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <Link to="/aboutme" className="nav-link text-white fs-6">
-                    About me
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link text-white fs-6" href="#">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
+      <div className="contain">
+        <section id="Home">
+          <Box page={<Nav />} />
+          <Box page={<Me />} />
+          <Description />
+        </section>
+        <section id="Projects">
+          <Box page={<Title />} initialX={-100} finalX={0} />
+          <Box page={<Cards />} initialX={-100} finalX={0} delay={0.3}/>
+        </section>
+        <section id="About">
+          <Box page={<AboutMe />} initialX={-100} finalX={0} />
+        </section>
+        <section id="Skills">
+          <Box page={ <SkillsTitle /> } initialX={-100} finalX={0} />
+          <Box page={<Skills />} initialX={-100} finalX={0} delay={0.3}/>
+        </section>
+        <section id="Contact">
+          <div className="w-100">
+            <Box page={<Contact />} initialX={-100} finalX={0} />
           </div>
-        </nav>
-
-        <h1 className="d-flex justify-content-center text-center text-white mt-5 animate__animated animate__fadeInDown">
-          Nazareno Gutierrez
-        </h1>
-        <p className="d-flex justify-content-center text-center text-white fst-italic fs-5 animate__animated animate__fadeInUp">
-          Frontend Developer ReactJS
-        </p>
-        <p className="d-flex text-center text-white mt-5">
-          Hello!, I'm a junior/trainee Web Developer with React, my hobbies are
-          make solutions and style pages. One of my objetives are be in a kind
-          team work in wich I can contribute with my knowledge and may be
-          possible learn from them. I'm still studying React to use the 100% of
-          it and also ploish my practices
-        </p>
-        <h1 className="d-flex fs-3 justify-content-center text-center text-white animate__animated animate__fadeInLeft">
-          My recent work
-        </h1>
-        <Cards></Cards>
-        
+          <Box page={<ReachMe />} initialX={-100} finalX={0} />
+        </section>
+        <section id="Footer">
+          <Footer />
+        </section>
+        <div>
+          <FixedButtons />
+        </div>
       </div>
-      <Routes>
-        <Route exact path="/"></Route>
-        <Route path="/aboutme" element={<AboutMe />}></Route>
-      </Routes>
     </div>
   );
 }
