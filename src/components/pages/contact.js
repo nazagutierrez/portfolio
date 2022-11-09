@@ -53,8 +53,8 @@ function Contact() {
 export function ReachMe() {
   return(
     <div className="email-number row mt-5 d-flex justify-content-center">
-      <a className="social-icon btn btn-dark bi-envelope d-flex justify-content-center align-items-center rounded-circle" href="mailto:nazarenojunin@gmail.com"> </a>
-      <a className="social-icon btn btn-dark bi-telephone d-flex justify-content-center align-items-center rounded-circle ms-2" href="ms-phone:2364329720"> </a> {/* tel:+54 2364329720 - PARA LLAMADA */}
+      <a className="social-icon btn btn-primary border-0 bi-envelope d-flex justify-content-center align-items-center rounded-circle" href="mailto:nazarenojunin@gmail.com"> </a>
+      <a className="social-icon btn btn-primary border-0 bi-telephone d-flex justify-content-center align-items-center rounded-circle ms-2" href="ms-phone:2364329720"> </a> {/* tel:+54 2364329720 - PARA LLAMADA */}
     </div>
   )
 }
