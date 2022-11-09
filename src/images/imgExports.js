@@ -11,6 +11,9 @@ import reduxImg from "./icons8-redux-96.png";
 import framerMotion from "./framer-motion-icon.webp";
 import responsiveDesign from "./icons8-responsive-64.png";
 import language from "./icons8-great-britain-96.png"
+import taskApp from "./tasks-app-image.png";
+import coinbase from "./coinbase-app-image.png";
+import portfolio from "./portfolio-img.png";
 
 export default {
   reactImg,
@@ -26,4 +29,7 @@ export default {
   framerMotion,
   responsiveDesign,
   language,
+  taskApp,
+  coinbase,
+  portfolio,
 };

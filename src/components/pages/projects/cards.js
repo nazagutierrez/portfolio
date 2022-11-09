@@ -2,8 +2,7 @@ import React from 'react'
 import { useTranslation } from "react-i18next";
 
 import Card from './card'
-import image1 from "../../../images/tasks-app-image.png"
-import image3 from '../../../images/coinbase-app-image.png'
+import image from "../../../images/imgExports";
 
 let cards = [{
     id: 1,
@@ -11,15 +10,15 @@ let cards = [{
     description: "Maded with ReactJS and Redux Toolkit",
     url: "https://nazagutierrez.github.io/Tasks-app-react/",
     url2: "https://github.com/nazagutierrez/Tasks-app-react",
-    image: image1
+    image: image.taskApp
 },
 {
     id: 3,
     title: "Coinbase's clon",
-    description: "Static HTML, styled by Sass",
+    description: "Static HTML styled by Sass",
     url: "https://nazagutierrez.github.io/coinbase-clone/",
     url2: "https://github.com/nazagutierrez/coinbase-clone",
-    image: image3
+    image: image.coinbase
 },
 {
     id: 2,
@@ -27,7 +26,7 @@ let cards = [{
     description: "Maded with ReactJS and styled by Sass and Bootstrap",
     url: "#",
     url2: "https://github.com/nazagutierrez/portfolio",
-    image: image1
+    image: image.portfolio
 }]
 
 function Cards() {

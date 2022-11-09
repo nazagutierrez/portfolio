@@ -5,7 +5,7 @@ function AboutMe() {
   const [t] = useTranslation("global");
   return (
     <div className="container">
-        <div classname="aboutme">
+        <div className="aboutme">
           <h4 className="d-flex mb-4 mt-3 fs-2 justify-content-center text-center text-white">
             {t("about.title")}
           </h4>
