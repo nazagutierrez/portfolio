@@ -1,10 +1,10 @@
-# In process
+# My portfolio
 ## Description
 This is my portfolio, it was maded with Create React App and styled by bootstrap
 
 ## Author
 **Nazareno Gutierrez**
 
-## Link to portfolio and linkedin
+## Link to my linkedin and portfolio
 * [LinkedIn](https://www.linkedin.com/in/nazarenogutierrezoficial)
-* [Portfolio]()
+* [Portfolio](https://nazagutierrez.github.io/portfolio/)
