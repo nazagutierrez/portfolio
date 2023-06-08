@@ -8,6 +8,7 @@ import i18next from "i18next";
 import español from "./translations/es/global.json";
 import english from "./translations/en/global.json";
 
+// translations config
 i18next.init({
   interpolation: { escapeValue: false },
   lng: "en",

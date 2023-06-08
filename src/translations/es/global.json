@@ -1,7 +1,7 @@
 {
     "home": {
         "frontend": "Desarrollador Frontend",
-        "description": "Hola!, soy un Desarrollador Web junior/trainee con React, disfruto programar y estilar paginas.",
+        "description": "Hola!, soy un Desarrollador Web junior con React, disfruto programar y estilar paginas.",
         "nav-link-1": "Inicio",
         "nav-link-2": "Proyectos",
         "nav-link-3": "Sobre mi",
@@ -11,8 +11,7 @@
 
     "projects": {
         "my-projects": "Mis projectos",
-        "visit-page": "Visítala",
-        "source-code": "Código"
+        "demo": "Prueba"
     },
 
     "about": {

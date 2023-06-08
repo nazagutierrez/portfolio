@@ -1,9 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import resumeES from '../../resumes/curriculumES.pdf';
+import resumeEN from '../../resumes/curriculumEN.pdf';
 
 const Nav = () => {
-  const [t] = useTranslation("global")
+  const [t] = useTranslation("global");
   return (
     <div>
       <motion.nav
@@ -47,7 +49,7 @@ const Nav = () => {
 };
 
 export function Me() {
-  const [t] = useTranslation("global")
+  const [t] = useTranslation("global");
 
   return (
     <div>
@@ -72,11 +74,27 @@ export function Me() {
 }
 
 export function Description() {
-  const [t] = useTranslation("global")
+  const [t] = useTranslation("global");
   return (
-    <p className="d-flex justify-content-center text-center text-white mt-5">
-      {t("home.description")}
-    </p>
+    <>
+      <p className="d-flex justify-content-center text-center text-white mt-5">
+        {t("home.description")}
+      </p>
+      <div className="d-flex gap-2">
+        <a
+          className="text-white btn-primary rounded-1 px-3 py-1 border-0"
+          href={resumeEN} target="_blank"
+        >
+          Resume EN
+        </a>
+        <a
+          className="text-white btn-primary rounded-1 px-3 py-1 border-0"
+          href={resumeES} target="_blank"
+        >
+          Resume ES
+        </a>
+      </div>
+    </>
   );
 }
 

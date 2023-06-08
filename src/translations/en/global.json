@@ -1,7 +1,7 @@
 {
   "home": {
     "frontend": "Frontend Developer",
-    "description": "Hello!, I'm a junior/trainee Web Developer with React, I enjoy programming and styling pages.",
+    "description": "Hello!, I'm a junior Web Developer with React, I enjoy programming and styling pages.",
     "nav-link-1": "Home",
     "nav-link-2": "Projects",
     "nav-link-3": "About",
@@ -11,8 +11,7 @@
 
   "projects": {
     "my-projects": "My projects",
-    "visit-page": "Visit page",
-    "source-code": "Source code"
+    "demo": "Demo"
   },
 
   "about": {

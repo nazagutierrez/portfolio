@@ -14,6 +14,10 @@ import language from "./icons8-great-britain-96.png"
 import taskApp from "./tasks-app-image.png";
 import coinbase from "./coinbase-app-image.png";
 import portfolio from "./portfolio-img.png";
+import nextjs from "./next-js.svg";
+import firebase from "./firebase.svg";
+import tailwindcss from "./tailwind-css.svg";
+import cookta from "./cookta-foto.png";
 
 export default {
   reactImg,
@@ -32,4 +36,8 @@ export default {
   taskApp,
   coinbase,
   portfolio,
+  nextjs,
+  firebase,
+  tailwindcss,
+  cookta,
 };

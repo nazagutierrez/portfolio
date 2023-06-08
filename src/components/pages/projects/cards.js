@@ -6,26 +6,26 @@ import image from "../../../images/imgExports";
 
 let cards = [{
     id: 1,
-    title: "Tasks project",
-    description: "Maded with ReactJS and Redux Toolkit",
-    url: "https://nazagutierrez.github.io/Tasks-app-react/",
-    url2: "https://github.com/nazagutierrez/Tasks-app-react",
-    image: image.taskApp
+    title: "Freelance work",
+    description: "App for a bakery business, maded from 0 in 2 weeks",
+    url2: "https://cooktacookies.web.app/",
+    url: "https://github.com/nazagutierrez/",
+    image: image.cookta
 },
 {
     id: 3,
     title: "Coinbase's clon",
     description: "Static HTML styled by Sass",
-    url: "https://nazagutierrez.github.io/coinbase-clone/",
-    url2: "https://github.com/nazagutierrez/coinbase-clone",
+    url2: "https://nazagutierrez.github.io/coinbase-clone/",
+    url: "https://github.com/nazagutierrez/coinbase-clone",
     image: image.coinbase
 },
 {
     id: 2,
     title: "My Portfolio",
     description: "Maded with ReactJS and styled by Sass and Bootstrap",
-    url: "#",
-    url2: "https://github.com/nazagutierrez/portfolio",
+    url2: "#Home",
+    url: "https://github.com/nazagutierrez/portfolio",
     image: image.portfolio
 }]
 

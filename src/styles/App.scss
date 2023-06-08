@@ -189,3 +189,9 @@ section {
 .skill-card {
   width: 7rem !important;
 }
+.skill-hover-effect {
+  :hover {
+    transition: all 150ms ease-in-out; 
+    transform: scale(1.1);
+  }
+}

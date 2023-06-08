@@ -69,6 +69,21 @@ let skills = [
     id: "13",
     image: images.responsiveDesign,
     title: "Responsive design"    
+  },
+  {
+    id: "14",
+    image: images.firebase,
+    title: "Firebase"    
+  },
+  {
+    id: "15",
+    image: images.nextjs,
+    title: "Nextjs"    
+  },
+  {
+    id: "16",
+    image: images.tailwindcss,
+    title: "TailwindCSS"    
   }
 ];
 
@@ -90,7 +105,7 @@ export function SkillsTitle() {
     const [t] = useTranslation("global");
   return (
     <div>
-      <h1 className="justify-content-center text-center text-white fs-2 container mb-5 mt-sm-0 mt-5">
+      <h1 className="justify-content-center text-center text-white fs-2 container mb-4 mt-sm-0 mt-5">
         {t("skills.title")}
       </h1>
     </div>
