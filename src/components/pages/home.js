@@ -80,15 +80,15 @@ export function Description() {
       <p className="d-flex justify-content-center text-center text-white mt-5">
         {t("home.description")}
       </p>
-      <div className="d-flex gap-2">
+      <div className="d-flex gap-2 flex-wrap justify-content-center">
         <a
-          className="text-white btn-primary rounded-1 px-3 py-1 border-0"
+          className="text-black text-decoration-none fw-semibold btn-primary rounded-1 px-3 py-1 border-0"
           href={resumeEN} target="_blank"
         >
           Resume EN
         </a>
         <a
-          className="text-white btn-primary rounded-1 px-3 py-1 border-0"
+          className="text-black text-decoration-none fw-semibold btn-primary rounded-1 px-3 py-1 border-0"
           href={resumeES} target="_blank"
         >
           Resume ES

@@ -11,7 +11,7 @@ function Skill({ image, title }) {
             alt={title}
           ></img>
         </div>
-        <p className="fw-light">{title}</p>
+        <p className="text-black">{title}</p>
       </div>
     </div>
   );

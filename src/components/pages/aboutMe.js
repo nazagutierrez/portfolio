@@ -1,10 +1,18 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import images from "../../images/imgExports";
 
 function AboutMe() {
   const [t] = useTranslation("global");
   return (
-    <div className="container">
+    <div className="container d-lg-flex text-center mt-lg-0 my-5">
+      <img
+        src={images.noBgProfile}
+        alt="profile"
+        className="rounded-pill w-75 me-lg-5"
+        style={{ objectFit: "cover"}}
+      />
+      <div className="d-flex justify-content-end flex-column">
         <div className="aboutme">
           <h4 className="d-flex mb-4 mt-3 fs-2 justify-content-center text-center text-white">
             {t("about.title")}
@@ -13,38 +21,38 @@ function AboutMe() {
             {t("about.description")}
           </p>
         </div>
-        <div className="container d-md-flex align-items-center justify-content-evenly mt-5">
-          <div className="experience d-md-inline-block text-center mb-3 mb-md-0">
+        <div className=" d-md-inline-block align-items-center mt-5 d-md-inline-block text-center mb-3 mb-md-0 w-100">
             <h4 className="text-white fw-light fst-italic">
               {t("about.experience-title")}
             </h4>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item bg-transparent text-white border-light">{t("about.experience.exp1")}</li>
-              <li className="list-group-item bg-transparent text-white border-light">{t("about.experience.exp2")}</li>
-              <li className="list-group-item bg-transparent text-white border-light">{t("about.experience.exp3")}</li>
-            </ul>
-          </div>
-
-          <div className="certificates d-md-inline-block text-center mb-3 mb-md-0">
-            <h4 className="text-white fw-light fst-italic">
-              {t("about.certificate-title")}
-            </h4>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item bg-transparent text-white  border-light"><a className="nav-link text-center" href="https://community.open-bootcamp.com/user/nazagutierrez/certificaciones/6d8b3294-5aea-477f-b74f-3c0ce5cb5e9b" target="_blank" rel="noreferrer">{t("about.certificate.html-css")}</a></li>
-              <li className="list-group-item bg-transparent text-white border-light"><a className="nav-link text-center" href="https://community.open-bootcamp.com/user/nazagutierrez/certificaciones/f08e8681-8483-476b-8a87-08809e707861" target="_blank" rel="noreferrer">{t("about.certificate.git")}</a></li>
-            </ul>
-          </div>
-
-          <div className="education d-md-inline-block text-center mb-3 mb-md-0">
-            <h4 className="text-white fw-light fst-italic">
-              {t("about.education-title")}
-            </h4>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item bg-transparent text-white border-light"><a className="nav-link text-center" href="https://www.linkedin.com/school/openbootcamp-escuela/" target="_blank" rel="noreferrer">{t("about.education.openbootcamp")}</a></li>
-              <li className="list-group-item bg-transparent text-white border-light">{t("about.education.autodidact")}</li>
-            </ul>
-          </div>
+            <div className="d-flex justify-content-center align-items-center gap-3 flex-xl-nowrap flex-wrap">
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item bg-transparent text-white border-warning">
+                  {t("about.experience.exp1")} 
+                </li>
+                <li className="list-group-item bg-transparent text-white border-warning ">
+                  {t("about.experience-description.exp1")}
+                </li>
+              </ul>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item bg-transparent text-white border-warning">
+                  {t("about.experience.exp2")} 
+                </li>
+                <li className="list-group-item bg-transparent text-white border-warning ">
+                  {t("about.experience-description.exp2")}
+                </li>
+              </ul>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item bg-transparent text-white border-warning">
+                  {t("about.experience.exp3")} 
+                </li>
+                <li className="list-group-item bg-transparent text-white border-warning ">
+                  {t("about.experience-description.exp3")}
+                </li>
+              </ul>
+            </div>
         </div>
+      </div>
     </div>
   );
 }

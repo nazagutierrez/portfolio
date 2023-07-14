@@ -6,8 +6,8 @@ function Card({image, title, description, url, url2}) {
   const [t] = useTranslation("global")
   return (
     <div>
-        <div className="overflow-hidden">
-          <motion.img whileHover={{scale: 1.2}} src={image} className="card-img-top" alt="page-img"></motion.img>
+        <div>
+          <motion.img whileHover={{opacity: 0.4}}  src={image} className="card-img-top" alt="page-img"></motion.img>
         </div>
         <div className="card-body text-center d-flex flex-column">
             <h5 className="card-title">{title}</h5>

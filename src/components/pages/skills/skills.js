@@ -90,7 +90,7 @@ let skills = [
 function Skills() {
   return (
     <div className="d-flex justify-content-center">
-      <div className="skill-cards d-flex mt-sm-3 flex-wrap justify-content-center col-6 col-md-8">
+      <div className="skill-cards d-flex mt-sm-3 flex-wrap justify-content-center col-md-8">
         {skills.map((skill) => (
           <div className="skill-card" key={skill.id}>
             <Skill image={skill.image} title={skill.title} />
@@ -104,8 +104,8 @@ function Skills() {
 export function SkillsTitle() {
     const [t] = useTranslation("global");
   return (
-    <div>
-      <h1 className="justify-content-center text-center text-white fs-2 container mb-4 mt-sm-0 mt-5">
+    <div className="mt-5 mt-lg-0">
+      <h1 className="justify-content-center text-center fs-2 container mb-4 mt-sm-0 mt-5">
         {t("skills.title")}
       </h1>
     </div>

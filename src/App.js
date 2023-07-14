@@ -62,7 +62,7 @@ function App() {
           <div className="w-100">
             <Box page={<Contact />} initialX={-100} finalX={0} />
           </div>
-          <Box page={<ReachMe />} initialX={-100} finalX={0} />
+          <Box page={<ReachMe />} />
         </section>
         <section id="Footer">
           <Footer />

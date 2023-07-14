@@ -1,7 +1,7 @@
 {
   "home": {
-    "frontend": "Frontend Developer",
-    "description": "Hello!, I'm a junior Web Developer with React, I enjoy programming and styling pages.",
+    "frontend": "Front-end Developer",
+    "description": "Passionate about programming with React and self-taught developer.",
     "nav-link-1": "Home",
     "nav-link-2": "Projects",
     "nav-link-3": "About",
@@ -16,13 +16,10 @@
 
   "about": {
     "title": "About me",
-    "description": "I'm a developer passionate about styling pages. One of my objetives are be in a kind team work in wich I can contribute with myknowledge and may be possible learn from them. I'm still practicing to better handle React and also improve my practices. In the future, I'll like to learn Backend, to be a complete developer.",
+    "description": "Creative, curious and constantly learning. Focused on finding the problem and designing pages. Able to make esthetics and functional web pages to the client's request.",
     "experience-title": "Experience",
-    "experience": {"exp1": "Personal portfolio from 0", "exp2": "Clone of Coinbase page", "exp3": "Tasks app"},
-    "certificate-title": "Certificates",
-    "certificate" : {"html-css": "HTML and CSS", "git": "GIT"},
-    "education-title": "Education",
-    "education": {"openbootcamp": "I studied in OpenBootcamp", "autodidact": "Autodidact"}
+    "experience": {"exp1": "Men's House barber", "exp2": "Cookta", "exp3": "Coinbase page"},
+    "experience-description": {"exp1": "Website created from 0 for a barbershop with a system created by me to schedule an appointment.", "exp2": "Website made for a bakery busines, applying new techniques, and fast development.", "exp3": "Static clone of Coinbase page, maded with HTML, Sass, Bootstrap. One of my first projects"}
   },
 
   "skills": {

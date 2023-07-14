@@ -18,6 +18,8 @@ import nextjs from "./next-js.svg";
 import firebase from "./firebase.svg";
 import tailwindcss from "./tailwind-css.svg";
 import cookta from "./cookta-foto.png";
+import profile from "./fotonaza3.jpg";
+import noBgProfile from "./fotonaza3-no-bg.png";
 
 export default {
   reactImg,
@@ -40,4 +42,6 @@ export default {
   firebase,
   tailwindcss,
   cookta,
+  profile,
+  noBgProfile
 };
