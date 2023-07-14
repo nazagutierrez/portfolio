@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b92e9ba2.css",
-    "main.js": "/portfolio/static/js/main.f56de0b7.js",
+    "main.css": "/portfolio/static/css/main.f5590f23.css",
+    "main.js": "/portfolio/static/js/main.835dc911.js",
     "static/media/cookta-foto.png": "/portfolio/static/media/cookta-foto.4804e24b5cc14626abda.png",
     "static/media/portfolio-img.png": "/portfolio/static/media/portfolio-img.cf968f1dd10a8d35a63f.png",
+    "static/media/fotonaza3-no-bg.png": "/portfolio/static/media/fotonaza3-no-bg.a5ef6a88661f1516f8d8.png",
     "static/media/curriculumEN.pdf": "/portfolio/static/media/curriculumEN.48e120992bc79810427f.pdf",
     "static/media/curriculumES.pdf": "/portfolio/static/media/curriculumES.5a7960887fd7f86bd7cc.pdf",
     "static/media/coinbase-app-image.png": "/portfolio/static/media/coinbase-app-image.62a13376f55abc973513.png",
+    "static/media/fotonaza3.jpg": "/portfolio/static/media/fotonaza3.869e00b4f872d548e8e8.jpg",
     "static/media/tasks-app-image.png": "/portfolio/static/media/tasks-app-image.b4c363da51ff0bb5b104.png",
     "static/media/next-js.svg": "/portfolio/static/media/next-js.7ad1b36598e17831d401533dbbc58d39.svg",
     "index.html": "/portfolio/index.html",
     "static/media/tailwind-css.svg": "/portfolio/static/media/tailwind-css.1ff53afb0748cd483d5f0ed13029f287.svg",
     "static/media/firebase.svg": "/portfolio/static/media/firebase.c55df03130647cc8ee934a0a6ebecf70.svg",
-    "main.b92e9ba2.css.map": "/portfolio/static/css/main.b92e9ba2.css.map",
-    "main.f56de0b7.js.map": "/portfolio/static/js/main.f56de0b7.js.map"
+    "main.f5590f23.css.map": "/portfolio/static/css/main.f5590f23.css.map",
+    "main.835dc911.js.map": "/portfolio/static/js/main.835dc911.js.map"
   },
   "entrypoints": [
-    "static/css/main.b92e9ba2.css",
-    "static/js/main.f56de0b7.js"
+    "static/css/main.f5590f23.css",
+    "static/js/main.835dc911.js"
   ]
 }
