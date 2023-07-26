@@ -13,20 +13,20 @@ let cards = [{
     image: image.cookta
 },
 {
+    id: 2,
+    title: "Freelance work",
+    description: "Maded with React, Nextjs, Firebase and TailwindCSS",
+    url2: "https://menshouse-barber.web.app/",
+    url: "https://github.com/nazagutierrez/",
+    image: image.mensHousePicture
+},
+{
     id: 3,
     title: "Coinbase's clon",
     description: "Static HTML styled by Sass",
     url2: "https://nazagutierrez.github.io/coinbase-clone/",
     url: "https://github.com/nazagutierrez/coinbase-clone",
     image: image.coinbase
-},
-{
-    id: 2,
-    title: "My Portfolio",
-    description: "Maded with React and styled by Sass and Bootstrap",
-    url2: "#Home",
-    url: "https://github.com/nazagutierrez/portfolio",
-    image: image.portfolio
 }]
 
 function Cards() {

@@ -22,7 +22,7 @@ function AboutMe() {
           </p>
         </div>
         <div className=" d-md-inline-block align-items-center mt-5 d-md-inline-block text-center mb-3 mb-md-0 w-100">
-            <h4 className="text-white fw-light fst-italic">
+            <h4 className="text-white fw-light fst-italic ms-lg-2">
               {t("about.experience-title")}
             </h4>
             <div className="d-flex justify-content-center align-items-center gap-3 flex-xl-nowrap flex-wrap">

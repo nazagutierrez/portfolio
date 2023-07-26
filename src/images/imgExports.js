@@ -20,6 +20,7 @@ import tailwindcss from "./tailwind-css.svg";
 import cookta from "./cookta-foto.png";
 import profile from "./fotonaza3.jpg";
 import noBgProfile from "./fotonaza3-no-bg.png";
+import mensHousePicture from "./mens-house-picture.png";
 
 export default {
   reactImg,
@@ -43,5 +44,6 @@ export default {
   tailwindcss,
   cookta,
   profile,
-  noBgProfile
+  noBgProfile,
+  mensHousePicture
 };

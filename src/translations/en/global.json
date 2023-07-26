@@ -1,7 +1,7 @@
 {
   "home": {
     "frontend": "Front-end Developer",
-    "description": "Passionate about programming with React and self-taught developer.",
+    "description": "Passionate about web programming with React and self-directed development.",
     "nav-link-1": "Home",
     "nav-link-2": "Projects",
     "nav-link-3": "About",
@@ -16,10 +16,10 @@
 
   "about": {
     "title": "About me",
-    "description": "Creative, curious and constantly learning. Focused on finding the problem and designing pages. Able to make esthetics and functional web pages to the client's request.",
+    "description": "Creative, curious and constantly learning. Focused on finding and solving the problem and designing pages. Able to make esthetics and functional web pages to the client's request.",
     "experience-title": "Experience",
     "experience": {"exp1": "Men's House barber", "exp2": "Cookta", "exp3": "Coinbase page"},
-    "experience-description": {"exp1": "Website created from 0 for a barbershop with a system created by me to schedule an appointment.", "exp2": "Website made for a bakery busines, applying new techniques, and fast development.", "exp3": "Static clone of Coinbase page, maded with HTML, Sass, Bootstrap. One of my first projects"}
+    "experience-description": {"exp1": "Website created from 0 for a barbershop with a system created by me to schedule appointments.", "exp2": "Website made for a bakery busines, applying new techniques, and fast development.", "exp3": "Static clone of Coinbase page, maded with HTML, Sass, Bootstrap. One of my first projects"}
   },
 
   "skills": {
