@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f5590f23.css",
-    "main.js": "/portfolio/static/js/main.93a74639.js",
+    "main.css": "/portfolio/static/css/main.23e00f53.css",
+    "main.js": "/portfolio/static/js/main.921edbc7.js",
     "static/media/mens-house-picture.png": "/portfolio/static/media/mens-house-picture.e6c7a9d7c2a4943eae40.png",
     "static/media/cookta-foto.png": "/portfolio/static/media/cookta-foto.4804e24b5cc14626abda.png",
     "static/media/portfolio-img.png": "/portfolio/static/media/portfolio-img.cf968f1dd10a8d35a63f.png",
@@ -10,16 +10,16 @@
     "static/media/curriculumES.pdf": "/portfolio/static/media/curriculumES.262f0b58ba465cd03e06.pdf",
     "static/media/coinbase-app-image.png": "/portfolio/static/media/coinbase-app-image.62a13376f55abc973513.png",
     "static/media/fotonaza3.jpg": "/portfolio/static/media/fotonaza3.869e00b4f872d548e8e8.jpg",
+    "static/media/next-js.png": "/portfolio/static/media/next-js.c72482c59ce8f22648a4.png",
     "static/media/tasks-app-image.png": "/portfolio/static/media/tasks-app-image.b4c363da51ff0bb5b104.png",
-    "static/media/next-js.svg": "/portfolio/static/media/next-js.7ad1b36598e17831d401533dbbc58d39.svg",
     "index.html": "/portfolio/index.html",
     "static/media/tailwind-css.svg": "/portfolio/static/media/tailwind-css.1ff53afb0748cd483d5f0ed13029f287.svg",
     "static/media/firebase.svg": "/portfolio/static/media/firebase.c55df03130647cc8ee934a0a6ebecf70.svg",
-    "main.f5590f23.css.map": "/portfolio/static/css/main.f5590f23.css.map",
-    "main.93a74639.js.map": "/portfolio/static/js/main.93a74639.js.map"
+    "main.23e00f53.css.map": "/portfolio/static/css/main.23e00f53.css.map",
+    "main.921edbc7.js.map": "/portfolio/static/js/main.921edbc7.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5590f23.css",
-    "static/js/main.93a74639.js"
+    "static/css/main.23e00f53.css",
+    "static/js/main.921edbc7.js"
   ]
 }
