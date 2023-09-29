@@ -12,8 +12,13 @@ let skills = [
   },
   {
     id: "2",
-    image: images.language,
-    title: "Intermediate English"
+    image: images.nextjs,
+    title: "Nextjs"    
+  },
+  {
+    id: "16",
+    image: images.tailwindcss,
+    title: "TailwindCSS"    
   },
   {
     id: "3",
@@ -46,19 +51,9 @@ let skills = [
     title: "Git"
   },
   {
-    id: "9",
-    image: images.npmImg,
-    title: "npm"
-  },
-  {
-    id: "10",
-    image: images.reduxImg,
-    title: "Redux"
-  },
-  {
-    id: "11",
-    image: images.apiImg,
-    title: "Api consume"
+    id: "14",
+    image: images.firebase,
+    title: "Firebase"    
   },
   {
     id: "12",
@@ -66,24 +61,14 @@ let skills = [
     title: "Framer motion"
   },
   {
+    id: "11",
+    image: images.apiImg,
+    title: "Api consume"
+  },
+  {
     id: "13",
     image: images.responsiveDesign,
     title: "Responsive design"    
-  },
-  {
-    id: "14",
-    image: images.firebase,
-    title: "Firebase"    
-  },
-  {
-    id: "15",
-    image: images.nextjs,
-    title: "Nextjs"    
-  },
-  {
-    id: "16",
-    image: images.tailwindcss,
-    title: "TailwindCSS"    
   }
 ];
 

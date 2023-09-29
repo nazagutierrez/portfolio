@@ -7,7 +7,7 @@ function Skill({ image, title }) {
         <div className="skill-hover-effect">
           <img
             src={image}
-            className="img-thumbnail map-img bg-dark border-0 rounded-circle"
+            className="img-thumbnail object-fit-none map-img bg-dark border-0 rounded-circle"
             alt={title}
           ></img>
         </div>

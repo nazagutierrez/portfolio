@@ -22,7 +22,7 @@ const FixedButtons = () => {
       <div className="d-none d-sm-block">
         <a
           className="social-icon btn btn-dark bi-linkedin d-flex justify-content-center align-items-center rounded-circle mb-1"
-          href="https://www.linkedin.com/in/nazarenogutierrezoficial/"
+          href="https://www.linkedin.com/in/nazarenogutierrez1/"
           target="_blank"
           rel="noreferrer"> </a>
 

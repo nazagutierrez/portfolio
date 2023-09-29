@@ -53,14 +53,15 @@ function Contact() {
 
 export function ReachMe() {
   return(
-    <div className="email-number row mt-5 mb-5 d-flex justify-content-center">
+    <div className="email-number  mt-5 mb-5 d-flex justify-content-center flex-wrap">
       <a className="social-icon btn btn-primary border-0 bi-envelope d-flex justify-content-center align-items-center rounded-circle" href="mailto:nazarenojunin@gmail.com"> </a>
       <a className="social-icon btn btn-primary border-0 bi-telephone d-flex justify-content-center align-items-center rounded-circle ms-2" href="tel:+54 2364329720"> </a>
       
-      <a className="social-icon btn btn-primary border-0 fs-5 text-black bi bi-arrow-up d-flex justify-content-center align-items-center rounded-circle ms-2 position-absolute end-0 me-4" href="#Home"> </a>
+      <a className="social-icon btn btn-primary border-0 fs-5 text-black bi bi-arrow-up d-flex justify-content-center align-items-center rounded-circle ms-2 position-absolute end-0 me-4 d-sm-block d-none" href="#Home"> </a>
       
       <a className="social-icon btn btn-primary bi-linkedin border-0 d-flex justify-content-center align-items-center rounded-circle ms-2 d-block d-sm-none" href="https://www.linkedin.com/in/nazarenogutierrezoficial/" target="_blank" rel="noreferrer"> </a>
       <a className="social-icon btn btn-primary bi-github border-0 d-flex justify-content-center align-items-center rounded-circle ms-2 d-block d-sm-none" href="https://github.com/nazagutierrez" target="_blank" rel="noreferrer"> </a>
+      <a className="social-icon btn btn-primary border-0 fs-5 text-black bi bi-arrow-up d-flex justify-content-center align-items-center rounded-circle ms-2 end-0 d-sm-none" href="#Home"> </a>
     </div>
   )
 }
