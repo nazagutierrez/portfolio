@@ -20,7 +20,9 @@ body {
   background-color: #1f1f1f;
 }
 #Footer {
-  min-height: 25vh !important;
+  font-size: large;
+  color: rgb(216, 216, 216);
+  min-height: 15vh !important;
   background-color: #2b2b2b;
 }
 
@@ -103,8 +105,13 @@ section {
 
 .social-icon {
   right: auto;
-  width: 2.6rem !important;
+  width: 2.7rem !important;
   height: 2.6rem;
+}
+
+.arrow-to-home {
+  width: 1.6rem !important;
+  height: 1.6rem;
 }
 
 .nav-item {
@@ -154,13 +161,39 @@ section {
 
 .map-img {
   transition: all 150ms ease-in-out; 
-  min-width: 110px !important;
-  max-height: 110px;
+  min-width: 80px !important;
+  max-height: 80px;
+  @media (min-width: 768px) {
+    min-width: 100px !important;
+    max-height: 100px;
+   }
+  @media (min-width: 992px) { 
+    min-width: 110px !important;
+    max-height: 110px;
+
+  }
 }
 
 .skill-card {
-  width: 7rem !important;
+  width: 5rem !important;
+  @media (min-width: 768px) {
+    width: 6rem !important;
+   }
+  @media (min-width: 992px) { 
+    width: 7rem !important;
+  }
 }
+
+.skill-title {
+  font-size: 21px;
+  @media (min-width: 768px) {
+    font-size: 24px;
+   }
+  @media (min-width: 992px) { 
+    font-size: larger
+  } 
+}
+
 .skill-hover-effect {
   :hover {
     transition: all 150ms ease-in-out; 

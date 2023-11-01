@@ -3,7 +3,7 @@ import React from "react";
 function Skill({ image, title }) {
   return (
     <div>
-      <div className="text-white text-center justify-content-center ">
+      <div className="text-white text-center justify-content-center">
         <div className="skill-hover-effect">
           <img
             src={image}
@@ -11,7 +11,7 @@ function Skill({ image, title }) {
             alt={title}
           ></img>
         </div>
-        <p className="text-black">{title}</p>
+        <h6 className="text-black skill-title">{title}</h6>
       </div>
     </div>
   );

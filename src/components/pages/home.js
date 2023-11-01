@@ -22,8 +22,8 @@ const Nav = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white fs-6" href="#Projects">
-                {t("home.nav-link-2")}
+              <a className="nav-link text-white fs-6" href="#Skills">
+                {t("home.nav-link-4")}
               </a>
             </li>
             <li className="nav-item">
@@ -32,8 +32,8 @@ const Nav = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white fs-6" href="#Skills">
-                {t("home.nav-link-4")}
+              <a className="nav-link text-white fs-6" href="#Projects">
+                {t("home.nav-link-2")}
               </a>
             </li>
             <li className="nav-item">
@@ -77,19 +77,19 @@ export function Description() {
   const [t] = useTranslation("global");
   return (
     <>
-      <p className="d-flex justify-content-center text-center text-white mt-5">
+      <p className="d-flex justify-content-center text-center text-white mt-5 px-2">
         {t("home.description")}
       </p>
       <div className="d-flex gap-2 flex-wrap justify-content-center">
         <a
           className="text-black text-decoration-none fw-semibold btn-primary rounded-1 px-3 py-1 border-0"
-          href={resumeEN} target="_blank"
+          href={resumeEN} target="_blank" rel="noreferrer"
         >
           Resume EN
         </a>
         <a
           className="text-black text-decoration-none fw-semibold btn-primary rounded-1 px-3 py-1 border-0"
-          href={resumeES} target="_blank"
+          href={resumeES} target="_blank" rel="noreferrer"
         >
           Resume ES
         </a>

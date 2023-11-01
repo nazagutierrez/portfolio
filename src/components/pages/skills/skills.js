@@ -75,7 +75,7 @@ let skills = [
 function Skills() {
   return (
     <div className="d-flex justify-content-center">
-      <div className="skill-cards d-flex mt-sm-3 flex-wrap justify-content-center col-md-8">
+      <div className="d-flex mt-sm-3 flex-wrap justify-content-center col-md-8">
         {skills.map((skill) => (
           <div className="skill-card" key={skill.id}>
             <Skill image={skill.image} title={skill.title} />
