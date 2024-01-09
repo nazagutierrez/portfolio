@@ -47,16 +47,16 @@ function App() {
           <Box page={<Me />} />
           <Description />
         </section>
-        <section id="Skills">
-          <Box page={ <SkillsTitle /> } initialX={-100} finalX={0} />
-          <Box page={<Skills />} initialX={-100} finalX={0} delay={0.3}/>
+        <section id="Projects">
+          <Box page={<Title />} initialX={-100} finalX={0} />
+          <Box page={<Cards />} initialX={-100} finalX={0} delay={0.3}/>
         </section>
         <section id="About">
           <Box page={<AboutMe />} initialX={-100} finalX={0} />
         </section>
-        <section id="Projects">
-          <Box page={<Title />} initialX={-100} finalX={0} />
-          <Box page={<Cards />} initialX={-100} finalX={0} delay={0.3}/>
+        <section id="Skills">
+          <Box page={ <SkillsTitle /> } initialX={-100} finalX={0} />
+          <Box page={<Skills />} initialX={-100} finalX={0} delay={0.3}/>
         </section>
         <section id="Contact">
           <div className="w-100">
