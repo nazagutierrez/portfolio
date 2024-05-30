@@ -22,8 +22,8 @@ const Nav = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white fs-6" href="#Skills">
-                {t("home.nav-link-4")}
+              <a className="nav-link text-white fs-6" href="#Projects">
+                {t("home.nav-link-2")}
               </a>
             </li>
             <li className="nav-item">
@@ -32,8 +32,8 @@ const Nav = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white fs-6" href="#Projects">
-                {t("home.nav-link-2")}
+              <a className="nav-link text-white fs-6" href="#Skills">
+                {t("home.nav-link-4")}
               </a>
             </li>
             <li className="nav-item">
