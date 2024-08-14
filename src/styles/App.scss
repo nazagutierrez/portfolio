@@ -16,7 +16,20 @@ body {
 #Projects, #Skills, #Footer {
   background-color: #c09a27;
 }
-#Home ,#About, #Contact {
+
+#Skills {
+  background-image: url("../images/bg-yellow-wave.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Home {
+  background-image: url("../images/bg-black-wave.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#About, #Contact {
   background-color: #1f1f1f;
 }
 #Footer {
