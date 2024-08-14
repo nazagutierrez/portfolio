@@ -13,12 +13,17 @@ body {
   }
 }
 
-#Projects, #Skills, #Footer {
+#Skills, #Footer {
   background-color: #c09a27;
 }
 
 #Skills {
   background-image: url("../images/bg-yellow-wave.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Projects {
+  background-image: url("../images/bg-yellow-wave2.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -29,9 +34,16 @@ body {
   background-size: cover;
 }
 
-#About, #Contact {
+#About {
+  background-image: url("../images/bg-black-wave2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Contact {
   background-color: #1f1f1f;
 }
+
 #Footer {
   font-size: large;
   color: rgb(216, 216, 216);
