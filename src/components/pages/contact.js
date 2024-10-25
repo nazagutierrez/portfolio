@@ -6,7 +6,7 @@ function Contact() {
   return (
     <div className="container">
       <form className="contact" action="https://formspree.io/f/xdojwpoa" method="POST">
-        <div className="d-flex mb-5 mt-5 fs-2 justify-content-center text-white">
+        <div className="d-flex mb-5 mt-5 fs-2 justify-content-center text-white underline-yellow">
           {t("contact.title")}
         </div>
         <div className="form-floating mb-3 text-white">

@@ -90,7 +90,7 @@ export function SkillsTitle() {
     const [t] = useTranslation("global");
   return (
     <div className="mt-5 mt-lg-0">
-      <h1 className="justify-content-center text-center fs-2 container mb-4 mt-sm-0 mt-5">
+      <h1 className="justify-content-center text-center fs-2 container mb-4 mt-sm-0 mt-5 underline-black">
         {t("skills.title")}
       </h1>
     </div>
