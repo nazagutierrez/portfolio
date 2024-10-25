@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.80cacc53.css",
-    "main.js": "/portfolio/static/js/main.29a438b5.js",
+    "main.css": "/portfolio/static/css/main.b1555f7e.css",
+    "main.js": "/portfolio/static/js/main.8edc9fca.js",
     "static/media/mens-house-picture.png": "/portfolio/static/media/mens-house-picture.e6c7a9d7c2a4943eae40.png",
     "static/media/cookta-foto.png": "/portfolio/static/media/cookta-foto.4804e24b5cc14626abda.png",
     "static/media/portfolio-img.png": "/portfolio/static/media/portfolio-img.cf968f1dd10a8d35a63f.png",
@@ -9,6 +9,7 @@
     "static/media/coinbase-app-image.png": "/portfolio/static/media/coinbase-app-image.62a13376f55abc973513.png",
     "static/media/curriculumES.pdf": "/portfolio/static/media/curriculumES.1787ddf2ca5d47743d11.pdf",
     "static/media/curriculumEN.pdf": "/portfolio/static/media/curriculumEN.5ca62b0ba25c7fbb4986.pdf",
+    "static/media/MARCADEAGUANEGRA1.png": "/portfolio/static/media/MARCADEAGUANEGRA1.cc97e076bb6daafac008.png",
     "static/media/fotonaza3.jpg": "/portfolio/static/media/fotonaza3.869e00b4f872d548e8e8.jpg",
     "static/media/next-js.png": "/portfolio/static/media/next-js.c72482c59ce8f22648a4.png",
     "static/media/tasks-app-image.png": "/portfolio/static/media/tasks-app-image.b4c363da51ff0bb5b104.png",
@@ -19,11 +20,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/tailwind-css.svg": "/portfolio/static/media/tailwind-css.1ff53afb0748cd483d5f0ed13029f287.svg",
     "static/media/firebase.svg": "/portfolio/static/media/firebase.c55df03130647cc8ee934a0a6ebecf70.svg",
-    "main.80cacc53.css.map": "/portfolio/static/css/main.80cacc53.css.map",
-    "main.29a438b5.js.map": "/portfolio/static/js/main.29a438b5.js.map"
+    "main.b1555f7e.css.map": "/portfolio/static/css/main.b1555f7e.css.map",
+    "main.8edc9fca.js.map": "/portfolio/static/js/main.8edc9fca.js.map"
   },
   "entrypoints": [
-    "static/css/main.80cacc53.css",
-    "static/js/main.29a438b5.js"
+    "static/css/main.b1555f7e.css",
+    "static/js/main.8edc9fca.js"
   ]
 }
