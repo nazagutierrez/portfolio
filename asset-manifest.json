@@ -1,18 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.b1555f7e.css",
-    "main.js": "/portfolio/static/js/main.40e5552d.js",
-    "static/media/mens-house-picture.png": "/portfolio/static/media/mens-house-picture.e6c7a9d7c2a4943eae40.png",
-    "static/media/cookta-foto.png": "/portfolio/static/media/cookta-foto.4804e24b5cc14626abda.png",
-    "static/media/portfolio-img.png": "/portfolio/static/media/portfolio-img.cf968f1dd10a8d35a63f.png",
-    "static/media/fotonaza3-no-bg.png": "/portfolio/static/media/fotonaza3-no-bg.a5ef6a88661f1516f8d8.png",
-    "static/media/coinbase-app-image.png": "/portfolio/static/media/coinbase-app-image.62a13376f55abc973513.png",
+    "main.js": "/portfolio/static/js/main.e77716d1.js",
     "static/media/curriculumEN.pdf": "/portfolio/static/media/curriculumEN.2c1c688efbca119bd89d.pdf",
     "static/media/curriculumES.pdf": "/portfolio/static/media/curriculumES.c619dbefb287081ae2f2.pdf",
-    "static/media/MARCADEAGUANEGRA1.png": "/portfolio/static/media/MARCADEAGUANEGRA1.cc97e076bb6daafac008.png",
-    "static/media/fotonaza3.jpg": "/portfolio/static/media/fotonaza3.869e00b4f872d548e8e8.jpg",
-    "static/media/next-js.png": "/portfolio/static/media/next-js.c72482c59ce8f22648a4.png",
-    "static/media/tasks-app-image.png": "/portfolio/static/media/tasks-app-image.b4c363da51ff0bb5b104.png",
+    "static/media/MARCADEAGUANEGRA1.webp": "/portfolio/static/media/MARCADEAGUANEGRA1.b3eb63d76ea71047ad8d.webp",
+    "static/media/fotonaza3-no-bg.webp": "/portfolio/static/media/fotonaza3-no-bg.ea8ecd60c8d5e563d4ba.webp",
+    "static/media/next-js.webp": "/portfolio/static/media/next-js.d05de74db008ce8f4cb3.webp",
     "static/media/bg-black-wave.svg": "/portfolio/static/media/bg-black-wave.7e26d950f68ae1de5e32.svg",
     "static/media/bg-yellow-wave.svg": "/portfolio/static/media/bg-yellow-wave.263ae0492e39c49e4069.svg",
     "static/media/bg-black-wave2.svg": "/portfolio/static/media/bg-black-wave2.c394dead6c567e8be335.svg",
@@ -20,11 +14,12 @@
     "index.html": "/portfolio/index.html",
     "static/media/tailwind-css.svg": "/portfolio/static/media/tailwind-css.1ff53afb0748cd483d5f0ed13029f287.svg",
     "static/media/firebase.svg": "/portfolio/static/media/firebase.c55df03130647cc8ee934a0a6ebecf70.svg",
+    "static/media/no-country.webp": "/portfolio/static/media/no-country.ad88e396a72ea3d7558f.webp",
     "main.b1555f7e.css.map": "/portfolio/static/css/main.b1555f7e.css.map",
-    "main.40e5552d.js.map": "/portfolio/static/js/main.40e5552d.js.map"
+    "main.e77716d1.js.map": "/portfolio/static/js/main.e77716d1.js.map"
   },
   "entrypoints": [
     "static/css/main.b1555f7e.css",
-    "static/js/main.40e5552d.js"
+    "static/js/main.e77716d1.js"
   ]
 }
