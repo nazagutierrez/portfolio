@@ -12,16 +12,30 @@ function AboutMe() {
         className="rounded-pill w-75 me-lg-5"
         style={{ objectFit: "cover"}}
       />
-      <div className="d-flex justify-content-end flex-column">
+      <div className="d-flex justify-content-center flex-column mt-5">
         <div className="aboutme">
-          <h4 className="d-flex mb-4 mt-3 fs-2 justify-content-center text-center text-white">
+          <h3 className="fs-2 text-center text-white underline-yellow">
             {t("about.title")}
-          </h4>
-          <p className="text-white mt-3 d-flex justify-content-center text-center">
-            {t("about.description")}
+          </h3>
+          <p className="text-white mt-3 text-center">
+            {t("about.description-a")}
+            {" "}
+            <span className="text-warning">{t("about.description-b")}</span>
+            {" "}
+            {t("about.description-c")}
+          </p>
+          <p className="text-white mt-4 text-center">
+            {t("about.description2-a")}
+            {" "}
+            <span className="text-warning">{t("about.description2-b")}</span>
+            {" "}
+            {t("about.description2-c")}
+          </p>
+          <p className="text-white mt-2 text-center">
+            {t("about.description3")}
           </p>
         </div>
-        <div className=" d-md-inline-block align-items-center mt-5 d-md-inline-block text-center mb-3 mb-md-0 w-100">
+        {/* <div className=" d-md-inline-block align-items-center mt-5 d-md-inline-block text-center mb-3 mb-md-0 w-100">
             <h4 className="text-white fw-light fst-italic ms-lg-2">
               {t("about.experience-title")}
             </h4>
@@ -51,7 +65,7 @@ function AboutMe() {
                 </li>
               </ul>
             </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
