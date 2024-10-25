@@ -18,6 +18,9 @@ import cookta from "./cookta-foto.png";
 import profile from "./fotonaza3.jpg";
 import noBgProfile from "./fotonaza3-no-bg.png";
 import mensHousePicture from "./mens-house-picture.png";
+import mensHouseLogo from "./MARCADEAGUANEGRA1.png";
+import tpeo from "./tpeo.png";
+import noCountry from "./no-country.png";
 
 export default {
   reactImg,
@@ -39,5 +42,8 @@ export default {
   cookta,
   profile,
   noBgProfile,
-  mensHousePicture
+  mensHousePicture,
+  tpeo,
+  noCountry,
+  mensHouseLogo
 };
