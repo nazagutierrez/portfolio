@@ -1,159 +1,88 @@
-import React from 'react'
+import React from "react";
 import { useTranslation } from "react-i18next";
+import imageImp from "../../../images/imgExports";
+import Timeline from "./Timeline";
 
-import Card from './card'
-import image from "../../../images/imgExports";
-
-let cards = [{
-    id: 1,
-    title: "Freelance work",
-    description: "Maded with React, TailwindCSS, MUI, Framer Motion",
-    url2: "https://cooktacookies.web.app/",
-    url: "https://github.com/nazagutierrez/",
-    image: image.cookta
-},
-{
-    id: 2,
-    title: "Freelance work",
-    description: "Maded with React, Nextjs, Firebase and TailwindCSS",
-    url2: "https://menshouse-barber.web.app/",
-    url: "https://github.com/nazagutierrez/",
-    image: image.mensHousePicture
-},
-{
-    id: 3,
-    title: "Coinbase's clon",
-    description: "Static HTML styled by Sass",
-    url2: "https://nazagutierrez.github.io/coinbase-clone/",
-    url: "https://github.com/nazagutierrez/coinbase-clone",
-    image: image.coinbase
-}]
-
-function Cards() {
+function linkSvg() {
   return (
-    <div className="d-flex flex-column flex-xl-row justify-content-center">
-        {
-            cards.map( (card) => (
-                <div className="card col-4 bg-dark text-white m-2 mt-4 p-0" key={card.id}>
-                    <Card title={card.title} description={card.description} url={card.url} url2={card.url2} image={card.image} />
-                </div>
-            ))
-        }
-    </div>
+    <svg style={{ fontSize: "1rem", color: "#2e2e2e9d", marginLeft: "8px" }} stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353.75.75 0 0 0-1.18.928 5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z"></path><path d="M7.28 11.153a3.936 3.936 0 0 1 5.88.353.75.75 0 0 0 1.18-.928 5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z"></path></svg>
   )
 }
 
-export function Title() {
-    const [t] = useTranslation("global")
-    return(
-        <div>
-            <h1 className="d-flex fs-2 mt-4 mt-0-md justify-content-center text-center">{t("projects.my-projects")}</h1>
+let cards = [
+  {
+    id: 1,
+    title: "TPEOficial",
+    period: "2024 - Present",
+    url: "https://github.com/TPEOficial",
+    image: imageImp.tpeo,
+  },
+  {
+    id: 2,
+    title: "No country",
+    period: "2023 - 2024",
+    url: "https://github.com/No-Country-simulation",
+    image: imageImp.noCountry,
+  },
+  {
+    id: 3,
+    title: "Men's House barber",
+    period: "2022 - 2023",
+    url: "https://github.com/nazagutierrez/mens-house-barber",
+    image: imageImp.mensHouseLogo,
+  },
+];
+
+function Cards() {
+  const [t] = useTranslation("global");
+  return (
+    <>
+      <section style={{ width: "100vw" }} className="d-flex justify-content-center px-2 cards-section">
+        <Timeline />
+        <div style={{gap: "50px"}} className="d-flex flex-column">
+          {cards.map((card, index) => (
+            <div
+            style={{ maxWidth: "800px" }}
+            key={index}
+            className="d-flex flex-column align-items-start justify-content-center"
+            >
+              <h2 style={{ paddingBlock: "2px" }} className="bg-dark px-2 rounded-1 mb-2 exp-period">
+                {t(`experience.exp-period-${index}`)}
+              </h2> 
+              <a href={card.url} className="d-flex align-items-center mb-2 exp-link" target="_blank" rel="noreferrer">
+                <img className="exp-card-img me-2 d-sm-none rounded-1" src={card.image} alt="tpeo"/>
+                {card.title}
+                {linkSvg()}
+              </a>
+              <div className="d-flex align-items-center">
+                <img className="exp-card-img d-none d-sm-block" src={card.image} alt="tpeo"/>
+                <h4 className="ps-4 mb-2 exp-description">
+                  {t(`experience.exp-description-${index}`)}
+                </h4>
+              </div>
+            </div>
+          ))}
         </div>
-    )
+      </section>
+      <div
+        style={{ color: "#292929da" ,fontSize: "0.9rem", marginBottom: "110px" }}
+        className="d-flex text-center justify-content-center mt-3 px-3"
+      >
+        {t("experience.more-projects")}
+      </div>
+    </>
+  );
 }
 
-export default Cards
+export function Title() {
+  const [t] = useTranslation("global");
+  return (
+    <div>
+      <h1 className="d-flex fs-2 mt-4 mt-0-md justify-content-center text-center underline-black">
+        {t("experience.exp-title")}
+      </h1>
+    </div>
+  );
+}
 
-// import React, { useState } from "react";
-// import { motion, AnimatePresence } from "framer-motion";
-// import { AiOutlineClose } from "react-icons/ai";
-
-// const buttonStyle = {
-//   position: "absolute",
-//   backgroundColor: "#e0a37f65",
-//   top: "39%",
-//   zIndex: 50,
-//   height: "50px",
-//   minWidth: "50px",
-//   fontSize: "1.5rem",
-//   borderRadius: 10,
-//   "&:hover": {
-//     backgroundColor: "#e0a37f99",
-//   },
-// };
-
-// const variants = {
-//   initial: (direction) => {
-//     return {
-//       x: direction > 0 ? 500 : -700,
-//       opacity: 0,
-//     };
-//   },
-//   animate: {
-//     x: 0,
-//     opacity: 1,
-//     transition: "ease-in",
-//   },
-//   exit: (direction) => {
-//     return {
-//       x: direction > 0 ? -1000 : 1200,
-//       opacity: 0,
-//       transition: "ease-in",
-//     };
-//   },
-// };
-
-// const Carousel = ({ imgArray, handleClose }) => {
-//   const [imgIndex, setImgIndex] = useState(0);
-//   const [direction, setDirection] = useState(0);
-
-//   function nextStep(images) {
-//     setDirection(1);
-//     if (imgIndex === images.length - 1) {
-//       setImgIndex(0);
-//       return;
-//     }
-//     setImgIndex(imgIndex + 1);
-//   }
-
-//   function prevStep(images) {
-//     setDirection(-1);
-//     if (imgIndex === 0) {
-//       setImgIndex(images.length - 1);
-//       return;
-//     }
-//     setImgIndex(imgIndex - 1);
-//   }
-//   return (
-//     <div className="flex items-center justify-center border-b pb-3 border-brown-dark-2">
-//       <button
-//         onClick={handleClose}
-//         className="absolute top-2 right-3 hover:opacity-60 text-brown-dark-2 text-3xl transition-all"
-//       >
-//         <AiOutlineClose />
-//       </button>
-//         <button
-//           onClick={() => prevStep(imgArray)}
-//           color="darkBrown"
-//           sx={buttonStyle}
-//           className="left-1"
-//         >
-//           {"<"}
-//         </button>
-//         <div className="relative h-96 w-96 overflow-hidden">
-//           <AnimatePresence initial={false} custom={direction}>
-//             <motion.img
-//               variants={variants}
-//               initial="initial"
-//               animate="animate"
-//               exit="exit"
-//               src={imgArray[imgIndex]}
-//               className="object-contain object-center absolute w-full h-full"
-//               key={imgArray[imgIndex]}
-//               custom={direction}
-//             />
-//           </AnimatePresence>
-//         </div>
-//         <button
-//           onClick={() => nextStep(imgArray)}
-//           color="darkBrown"
-//           sx={buttonStyle}
-//           className="right-1"
-//         >
-//           {">"}
-//         </button>
-//     </div>
-//   );
-// };
-
-// export default Carousel;
+export default Cards;
