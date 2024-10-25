@@ -1,22 +1,36 @@
 {
   "home": {
-    "frontend": "Front-end Developer",
+    "frontend": "Front-end Developer Jr.",
     "description": "Passionate about web programming with React and self-directed development.",
     "nav-link-1": "Home",
-    "nav-link-2": "Projects",
+    "nav-link-2": "Experience",
     "nav-link-3": "About",
     "nav-link-4": "Skills",
     "nav-link-5": "Contact"
   },
 
-  "projects": {
-    "my-projects": "My work experience",
-    "demo": "Demo"
+  "experience": {
+    "exp-title": "My work experience",
+    "exp-period-0": "2024 - Present",
+    "exp-period-1": "2023 - 2024",
+    "exp-period-2": "2022 - 2023",
+    "exp-description-0": "I work as a Frontend Developer at TPEOficial, a startup delivering software services and AI tools. My role includes frontend development, email creation, and contributing creative ideas, alongside a collaborative team with strong communication.",
+    "exp-description-1": "Five-week professional internship focused on teamwork, communication, and programming. Developed an MVP, web styles, and data structures from scratch, collaborating on backend/frontend, QA, design, and daily code reviews.",
+    "exp-description-2": "As a web developer, I built a responsive booking system with React and TailwindCSS, managed the backend with Firebase, and created an admin panel. This streamlined operations and reduced the manager's workload.",
+    "more-projects": "More projects and work on github!"
   },
 
   "about": {
     "title": "About me",
-    "description": "Creative, curious and constantly learning. Focused on finding and solving the problem and designing pages. Able to make esthetics and functional web pages to the client's request.",
+    "description-a": "Frontend Developer with",
+    "description-b": "+1 year",
+    "description-c": "of work experience. Creative, curious and constantly learning. Focused on finding and solving the problem and designing pages. Able to make esthetics and functional web pages to the client's request.",
+    
+    "description2-a": "I learned basic and advanced programming concepts over",
+    "description2-b": "2 years of being self-taught",
+    "description2-c": "and studying in courses, mainly focused on React with Next.js. I have also learned backend for routing and basic requests with Node and Express.",
+
+    "description3": "Feel free to reach out anytime to connect or learn more about what I do!",
     "experience-title": "Experience",
     "experience": {"exp1": "Men's House barber", "exp2": "Cookta", "exp3": "Coinbase page"},
     "experience-description": {"exp1": "Website created from 0 for a barbershop with a system created by me to schedule appointments.", "exp2": "Website made for a bakery busines, applying new techniques, and fast development.", "exp3": "Static clone of Coinbase page, maded with HTML, Sass, Bootstrap. One of my first projects"}
@@ -35,7 +49,7 @@
   },
 
   "footer": {
-      "description": "Portfolio made with ReactJS and styled by Sass, Bootstrap and Framer motion.",
+      "description": "Frontend developer with ReactJS, passionate about creating and styling web pages.",
       "made":" Made by "
   }
 }
