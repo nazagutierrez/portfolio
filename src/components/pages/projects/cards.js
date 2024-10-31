@@ -62,7 +62,7 @@ function Cards() {
                   <p style={{ lineHeight: "29px", marginBottom: "15px"}} className="fs-6 exp-description">
                     {t(`experience.exp-description-${index}`)}
                   </p>
-                  <ExpTech expName={card.id} />
+                  {/* <ExpTech expName={card.id} /> */}
                 </div>
               </div>
             </div>
