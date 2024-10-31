@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.753bf9b2.css",
-    "main.js": "/portfolio/static/js/main.3ed884cc.js",
+    "main.js": "/portfolio/static/js/main.bb8fea7f.js",
     "static/media/curriculumEN.pdf": "/portfolio/static/media/curriculumEN.2c1c688efbca119bd89d.pdf",
     "static/media/curriculumES.pdf": "/portfolio/static/media/curriculumES.c619dbefb287081ae2f2.pdf",
     "static/media/MARCADEAGUANEGRA1.webp": "/portfolio/static/media/MARCADEAGUANEGRA1.b3eb63d76ea71047ad8d.webp",
     "static/media/fotonaza3-no-bg.webp": "/portfolio/static/media/fotonaza3-no-bg.ea8ecd60c8d5e563d4ba.webp",
     "static/media/next-js.webp": "/portfolio/static/media/next-js.d05de74db008ce8f4cb3.webp",
+    "static/media/astro.svg": "/portfolio/static/media/astro.e7bbcc22cc40ffa4d071f4290d3e5ad8.svg",
     "static/media/typescript.svg": "/portfolio/static/media/typescript.b5b2d718660f30947dd581617ccdee0b.svg",
     "static/media/bg-black-wave.svg": "/portfolio/static/media/bg-black-wave.7e26d950f68ae1de5e32.svg",
     "static/media/bg-yellow-wave.svg": "/portfolio/static/media/bg-yellow-wave.263ae0492e39c49e4069.svg",
@@ -17,10 +18,10 @@
     "static/media/firebase.svg": "/portfolio/static/media/firebase.c55df03130647cc8ee934a0a6ebecf70.svg",
     "static/media/no-country.webp": "/portfolio/static/media/no-country.ad88e396a72ea3d7558f.webp",
     "main.753bf9b2.css.map": "/portfolio/static/css/main.753bf9b2.css.map",
-    "main.3ed884cc.js.map": "/portfolio/static/js/main.3ed884cc.js.map"
+    "main.bb8fea7f.js.map": "/portfolio/static/js/main.bb8fea7f.js.map"
   },
   "entrypoints": [
     "static/css/main.753bf9b2.css",
-    "static/js/main.3ed884cc.js"
+    "static/js/main.bb8fea7f.js"
   ]
 }
