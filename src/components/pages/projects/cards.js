@@ -2,6 +2,8 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import imageImp from "../../../images/imgExports";
 import Timeline from "./Timeline";
+import imgExports from "../../../images/imgExports";
+import ExpTech from "./ExpTech";
 
 function linkSvg() {
   return (
@@ -11,21 +13,21 @@ function linkSvg() {
 
 let cards = [
   {
-    id: 1,
+    id: "tpeo",
     title: "TPEOficial",
     period: "2024 - Present",
     url: "https://github.com/TPEOficial",
     image: imageImp.tpeo,
   },
   {
-    id: 2,
+    id: "no-country",
     title: "No country",
     period: "2023 - 2024",
     url: "https://github.com/No-Country-simulation",
     image: imageImp.noCountry,
   },
   {
-    id: 3,
+    id: "mens-house-barber",
     title: "Men's House barber",
     period: "2022 - 2023",
     url: "https://github.com/nazagutierrez/mens-house-barber",
@@ -56,9 +58,12 @@ function Cards() {
               </a>
               <div className="d-flex align-items-center">
                 <img className="exp-card-img d-none d-sm-block" src={card.image} alt="tpeo"/>
-                <h4 className="ps-4 mb-2 exp-description">
-                  {t(`experience.exp-description-${index}`)}
-                </h4>
+                <div className="d-flex flex-column align-items-center ps-4">
+                  <p style={{ lineHeight: "29px", marginBottom: "15px"}} className="fs-6 exp-description">
+                    {t(`experience.exp-description-${index}`)}
+                  </p>
+                  <ExpTech expName={card.id} />
+                </div>
               </div>
             </div>
           ))}

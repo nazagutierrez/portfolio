@@ -6,67 +6,67 @@ import images from "../../../images/imgExports";
 
 let skills = [
   {
-    id: "1",
+    id: crypto.randomUUID(),
     image: images.reactImg,
     title: "ReactJS"
   },
   {
-    id: "2",
+    id: crypto.randomUUID(),
     image: images.nextjs,
     title: "Nextjs"    
   },
   {
-    id: "16",
-    image: images.tailwindcss,
-    title: "TailwindCSS"    
-  },
-  {
-    id: "3",
+    id: crypto.randomUUID(),
     image: images.jsImg,
     title: "Javascript"
   },
   {
-    id: "4",
+    id: crypto.randomUUID(),
+    image: images.typescript,
+    title: "Typescript"    
+  },
+  {
+    id: crypto.randomUUID(),
+    image: images.tailwindcss,
+    title: "TailwindCSS"    
+  },
+  {
+    id: crypto.randomUUID(),
     image: images.cssImg,
     title: "CSS"
   },
   {
-    id: "5",
+    id: crypto.randomUUID(),
     image: images.htmlImg,
     title: "HTML"
   },
   {
-    id: "6",
+    id: crypto.randomUUID(),
     image: images.bootstrapImg,
     title: "Bootstrap"
   },
   {
-    id: "7",
+    id: crypto.randomUUID(),
     image: images.sassImg,
     title: "Sass"
   },
   {
-    id: "8",
+    id: crypto.randomUUID(),
     image: images.gitImg,
     title: "Git"
   },
   {
-    id: "14",
+    id: crypto.randomUUID(),
     image: images.firebase,
     title: "Firebase"    
   },
   {
-    id: "12",
-    image: images.framerMotion,
-    title: "Framer motion"
-  },
-  {
-    id: "11",
+    id: crypto.randomUUID(),
     image: images.apiImg,
     title: "Api consume"
   },
   {
-    id: "13",
+    id: crypto.randomUUID(),
     image: images.responsiveDesign,
     title: "Responsive design"    
   }
@@ -74,8 +74,8 @@ let skills = [
 
 function Skills() {
   return (
-    <div className="d-flex justify-content-center">
-      <div className="d-flex mt-sm-3 flex-wrap justify-content-center col-md-8">
+    <div className="d-flex justify-content-center skills-container">
+      <div className="d-flex mt-sm-3 flex-wrap gap-2 justify-content-center col-md-8">
         {skills.map((skill) => (
           <div className="skill-card" key={skill.id}>
             <Skill image={skill.image} title={skill.title} />

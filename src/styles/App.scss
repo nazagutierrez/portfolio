@@ -71,6 +71,15 @@ strong {
   }
 }
 
+.exp-tech-img {
+  width: 30px;
+  object-fit: cover;
+  @media (max-width: 767px) {
+    width: 50px;
+  }
+  
+}
+
 .exp-link {
   font-size: 1.7rem;
   color: rgb(44, 44, 44) !important;
@@ -168,16 +177,6 @@ body {
 .animate__fadeInLeft {
   margin-top: 200px;
   animation-delay: 2s;
-}
-
-.card {
-  align-self: center;
-  width: 100% !important;
-  max-width: 15rem !important;
-}
-
-.card-text {
-  min-height: 4.3rem;
 }
 
 .btn-primary {
@@ -289,13 +288,13 @@ section {
     max-height: 100px;
   }
   @media (min-width: 992px) {
-    min-width: 110px !important;
-    max-height: 110px;
+    min-width: 95px !important;
+    max-height: 95px;
   }
 }
 
 .skill-card {
-  width: 5rem !important;
+  width: 6rem !important;
   @media (min-width: 768px) {
     width: 6rem !important;
   }
@@ -304,24 +303,55 @@ section {
   }
 }
 
+.skills-container {
+  @media (max-width: 350px) {
+    margin-bottom: 240px;
+  }
+  @media (min-width: 351px) and (max-width: 437px) {
+    margin-bottom: 160px;
+  }
+  @media (min-width: 438px) and (max-width: 768px) {
+    margin-bottom: 150px;
+  }
+  @media (min-width: 769px) and (max-width: 1017px) {
+    margin-bottom: 140px;
+  }
+  @media (min-width: 1018px) {
+    margin-bottom: 80px;
+  }
+}
+
 .skill-title {
-  font-size: 21px;
+  font-size: 20px;
   @media (min-width: 768px) {
-    font-size: 24px;
+    font-size: 21px;
   }
   @media (min-width: 992px) {
-    font-size: larger;
+    font-size: 23px;
   }
 }
 
-.skill-hover-effect {
-  :hover {
-    transition: all 150ms ease-in-out;
-    transform: scale(1.1);
+.skill-img-container {
+  transition: all 200ms ease-in-out;
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  &:hover {
+    transition: all 200ms ease-in-out;
+    filter: none;
+    -webkit-filter: grayscale(0%);
+
+    .map-img {
+      &:hover {
+        filter: drop-shadow(20px 5px 4px #7e7e7ebd);
+      }
+    }
   }
 }
 
-.card-img-top {
-  height: 8rem;
-  object-fit: cover;
+.skill-img-container:hover {
+  .map-img {
+      filter: drop-shadow(20px 5px 4px #7e7e7e);
+   }
 }
+
+

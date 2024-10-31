@@ -6,7 +6,6 @@ import htmlImg from "./icons8-html-5-96.png";
 import sassImg from "./icons8-sass-96.png";
 import gitImg from "./icons8-git-96.png";
 import apiImg from "./icons8-api-64.png";
-import framerMotion from "./framer-motion-icon.png";
 import responsiveDesign from "./icons8-responsive-64.png";
 import nextjs from "./next-js.webp";
 import firebase from "./firebase.svg";
@@ -15,6 +14,8 @@ import noBgProfile from "./fotonaza3-no-bg.webp";
 import mensHouseLogo from "./MARCADEAGUANEGRA1.webp";
 import tpeo from "./tpeo.png";
 import noCountry from "./no-country.webp";
+import typescript from "./typescript.svg";
+// import astro from "./astro.svg"
 
 export default {
   reactImg,
@@ -25,7 +26,6 @@ export default {
   sassImg,
   gitImg,
   apiImg,
-  framerMotion,
   responsiveDesign,
   nextjs,
   firebase,
@@ -33,5 +33,7 @@ export default {
   noBgProfile,
   tpeo,
   noCountry,
-  mensHouseLogo
+  mensHouseLogo,
+  typescript,
+  // astro,
 };
