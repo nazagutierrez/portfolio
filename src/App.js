@@ -3,7 +3,7 @@ import "../src/styles/App.scss";
 import AboutMe from "./components/pages/aboutMe";
 import Cards, { Title } from "./components/pages/projects/cards";
 import { motion, useAnimation } from "framer-motion";
-import Contact, { ReachMe } from "./components/pages/contact";
+import Contact from "./components/pages/contact";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import FixedButtons from "./components/fixedButtons";
@@ -43,7 +43,7 @@ function App() {
     <div className="App">
       <div className="contain">
         <section id="Home">
-          <Box page={<Nav />} />
+          <Nav />
           <Box page={<Me />} />
           <Description />
         </section>
@@ -62,7 +62,6 @@ function App() {
           <div className="w-100">
             <Box page={<Contact />} initialX={-100} finalX={0} />
           </div>
-          <Box page={<ReachMe />} />
         </section>
         <section id="Footer">
           <Footer />

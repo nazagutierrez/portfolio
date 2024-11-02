@@ -1,68 +1,86 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { svgRender } from "../utils/svgRender";
 
 function Contact() {
   const [t] = useTranslation("global")
+
   return (
-    <div className="container">
-      <form className="contact" action="https://formspree.io/f/xdojwpoa" method="POST">
-        <div className="d-flex mb-5 mt-5 fs-2 justify-content-center text-white underline-yellow">
-          {t("contact.title")}
+    <div className="position-relative container d-flex flex-column gap-1 align-items-start justify-content-start mb-5">
+      <h2 className="mb-5 fs-2 underline-yellow text-white">
+        {t("contact.title")}
+      </h2>
+      <div>
+        <p className="contact-data-title mt-3">Say hi or talk future projects</p>
+        <div className="d-flex flex-column flex-sm-row justify-content-start align-items-start gap-3">
+          <h1 className="contact-data align-self-start align-self-sm-center">nazarenojunin@gmail.com</h1>
+          <div className="d-flex flex-sm-column gap-2 align-items-start justify-content-center">
+            <button className="btn-contact rounded-1 border-0 d-flex align-items-center justify-content-center gap-2">
+              {svgRender("copy")}
+              Copiar
+            </button>
+            <button className="btn-contact rounded-1 border-0 d-flex align-items-center justify-content-center gap-2">
+              {svgRender("send")}
+              Enviar
+            </button>
+          </div>
         </div>
-        <div className="form-floating mb-3 text-white">
-          <input
-            type="text"
-            name="Name"
-            className="form-control shadow-none text-white"
-            id="floatingName"
-            placeholder="Name"
-            required
-          />
-          <label htmlFor="floatingName">{t("contact.name")}</label>
-        </div>
+      </div>
 
-        <div className="form-floating text-white">
-          <input
-            type="email"
-            name="Email"
-            className="form-control shadow-none text-white"
-            id="floatingInput"
-            placeholder="name@example.com"
-            required
-          />
-          <label htmlFor="floatingInput">{t("contact.email")}</label>
+      <div className="mt-5">
+        <p className="contact-data-title">Call me or send me a message</p>
+        <div className="d-flex flex-column flex-sm-row justify-content-start align-items-start gap-3">
+          <h1 className="contact-data align-self-start align-self-sm-center">(+54) 236 432 9720</h1>
+          <div className="d-flex flex-sm-column gap-2 align-items-center justify-content-center">
+            <button className="btn-contact rounded-1 border-0 d-flex align-items-center justify-content-center gap-2">
+              {svgRender("copy")}
+              Copiar
+            </button>
+            <button className="btn-contact rounded-1 border-0 d-flex align-items-center justify-content-center gap-2">
+              {svgRender("call")}
+              Llamar
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div className="form-floating mt-3 text-white">
-          <textarea
-            className="form-control shadow-none text-white"
-            name="Comment"
-            placeholder="Leave a comment here"
-            id="floatingTextarea"
-          ></textarea>
-          <label htmlFor="floatingTextarea">{t("contact.comments")}</label>
+      <div className="mt-5">
+        <p className="contact-data-title">My socials</p>
+        <div className="d-flex flex-column flex-sm-row justify-content-start align-items-start gap-3">
+          <div className="cotact-social flex-wrap d-flex gap-2 text-black align-items-center justify-content-center">
+            <a 
+              className="btn-contact rounded-1 border-0 d-flex align-items-center justify-content-center gap-2"
+              href="https://www.linkedin.com/in/nazarenogutierrez1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {svgRender("linkedin")}
+              Linkedin
+            </a>
+            <a 
+              className="btn-contact rounded-1 border-0 d-flex align-items-center justify-content-center gap-2"
+              href="https://github.com/nazagutierrez"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {svgRender("github")}
+              Github
+            </a>
+            <a 
+              className="btn-contact rounded-1 border-0 d-flex align-items-center justify-content-center gap-2"
+              href="https://x.com/nazadevv"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {svgRender("twitter")}
+              Twitter
+            </a>
+          </div>
         </div>
-        <div className="d-flex justify-content-center">
-          <button type="submit" className="submit col-md-2 btn btn-primary mt-3">{t("contact.submit")}</button>
-        </div>
-      </form>
-
+      </div>
+      <a className="contact-home-btn btn btn-primary border-0 fs- text-black bi bi-arrow-up rounded-circle position-absolute" href="#Home"> </a> 
     </div>
   );
-}
-
-export function ReachMe() {
-  return(
-    <div className="email-number  mt-5 mb-5 d-flex justify-content-center flex-wrap">
-      <a className="social-icon btn btn-primary border-0 bi-envelope d-flex justify-content-center align-items-center rounded-circle" href="mailto:nazarenojunin@gmail.com"> </a>
-      <a className="social-icon btn btn-primary border-0 bi-whatsapp d-flex justify-content-center align-items-center rounded-circle ms-2" href="https://wa.me/542364329720?text=Hola!" target="_blank" rel="noreferrer"> </a>
-      
-      <a className="social-icon btn btn-primary border-0 fs-5 text-black bi bi-arrow-up d-flex justify-content-center align-items-center rounded-circle ms-2 position-absolute end-0 me-4 d-sm-block d-none" href="#Home"> </a>
-      
-      <a className="social-icon btn btn-primary bi-linkedin border-0 d-flex justify-content-center align-items-center rounded-circle ms-2 d-block d-sm-none" href="https://www.linkedin.com/in/nazarenogutierrezoficial/" target="_blank" rel="noreferrer"> </a>
-      <a className="social-icon btn btn-primary bi-github border-0 d-flex justify-content-center align-items-center rounded-circle ms-2 d-block d-sm-none" href="https://github.com/nazagutierrez" target="_blank" rel="noreferrer"> </a>
-    </div>
-  )
 }
 
 export default Contact;
