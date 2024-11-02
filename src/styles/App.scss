@@ -75,7 +75,7 @@ strong {
   width: 30px;
   object-fit: cover;
   @media (max-width: 767px) {
-    width: 50px;
+    width: 25px;
   }
   
 }
@@ -180,11 +180,87 @@ body {
 }
 
 .btn-primary {
+  transition: all ease 0.2s;
   &:hover {
     opacity: 0.7;
     transition: all ease 0.2s;
   }
   background-color: $mainColor !important;
+}
+
+.btn-contact {
+  color:black;
+  text-decoration: none;
+  background-color: #c7a94e !important;
+  transition: all ease 0.2s;
+  font-size: 20px;
+  width: 120px;
+  &:hover {
+    color: inherit;
+    opacity: 0.8;
+    transition: all ease 0.2s;
+  }
+  @media (max-width: 309px) {
+    width: 100px;
+    font-size: 15px;
+  }
+}
+
+.contact-data {
+  margin: 0;
+  color: #eee;
+  font-size: 50px;
+  @media (min-width: 800px) and (max-width: 1000px) {
+    font-size: 40px;
+  }
+  @media (min-width: 500px) and (max-width: 799px) {
+    font-size: 28px;
+  }
+  @media (min-width: 310px) and (max-width: 499px) {
+    font-size: 20px;
+  }
+  @media (max-width: 309px) {
+    font-size: 16px;
+  }
+}
+
+.contact-data-title {
+  color: #a1a1a1;
+  @media (min-width: 800px) and (max-width: 1000px) {
+    font-size: 20px;
+  }
+  @media (min-width: 500px) and (max-width: 799px) {
+    font-size: 18px;
+  }
+  @media (max-width: 499px) {
+    font-size: 10px;
+  }
+}
+
+.cotact-social {
+  @media (max-width: 440px) {
+    flex-direction: column;
+  }
+}
+
+.contact-home-btn {
+  font-size: 1.25rem !important;
+  top: 110%;
+  left: 95%;
+  @media (min-width: 600px) and (max-width: 1001px) {
+    font-size: 1rem !important;
+    left: 90%;
+  }
+  @media (min-width: 340px) and (max-width: 599px) {
+    font-size: 1rem !important;
+    top: 105%;
+    left: 80%;
+  }
+  @media (max-width: 339px) {
+    font-size: 1rem !important;
+    top: 105%;
+    left: 70%;
+  }
 }
 
 .img-fluid {
