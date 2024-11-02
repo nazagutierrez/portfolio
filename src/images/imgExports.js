@@ -15,7 +15,7 @@ import mensHouseLogo from "./MARCADEAGUANEGRA1.webp";
 import tpeo from "./tpeo.png";
 import noCountry from "./no-country.webp";
 import typescript from "./typescript.svg";
-// import astro from "./astro.svg"
+import astro from "./astro.svg"
 
 export default {
   reactImg,
@@ -35,5 +35,5 @@ export default {
   noCountry,
   mensHouseLogo,
   typescript,
-  // astro,
+  astro,
 };
