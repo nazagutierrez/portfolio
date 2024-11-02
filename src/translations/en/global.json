@@ -42,10 +42,13 @@
 
   "contact": {
     "title": "Contact me",
-    "name": "Name",
-    "email": "Email",
-    "comments": "Comments",
-    "submit": "Submit"
+    "email-header": "Say hi or discuss future projects",
+    "call-header": "Call me or send me a message",
+    "social-header": "My socials",
+    "send": "Send",
+    "call": "Call me",
+    "copy": "Copy",
+    "copied": "Copied!"
   },
 
   "footer": {

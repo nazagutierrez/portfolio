@@ -5,7 +5,7 @@
     "nav-link-1": "Inicio",
     "nav-link-2": "Experiencia",
     "nav-link-3": "Sobre mi",
-    "nav-link-4": "Habilidades",
+    "nav-link-4": "Skills",
     "nav-link-5": "Contacto"
   },
 
@@ -43,10 +43,13 @@
 
   "contact": {
     "title": "Contactame",
-    "name": "Nombre",
-    "email": "Email",
-    "comments": "Comentarios",
-    "submit": "Enviar"
+    "email-header": "Salúdame o hablemos de proyectos futuros",
+    "call-header": "Llámame o envíame un mensaje",
+    "social-header": "Mis redes sociales",
+    "send": "Enviar",
+    "call": "Llamar",
+    "copy": "Copiar",
+    "copied": "Copiado!"
   },
 
   "footer": {
