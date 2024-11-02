@@ -6,5 +6,5 @@ This is my portfolio, it was maded with ReactJS and styled by Bootstrap, Framer 
 **Nazareno Gutierrez**
 
 ## Link to my linkedin and portfolio
-* [LinkedIn](https://www.linkedin.com/in/nazarenogutierrezoficial)
+* [LinkedIn](https://www.linkedin.com/in/nazarenogutierrez1/)
 * [Portfolio](https://nazagutierrez.github.io/portfolio/)
