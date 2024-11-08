@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.37eeb264.css",
-    "main.js": "/portfolio/static/js/main.b31272ee.js",
+    "main.css": "/portfolio/static/css/main.2a719f5d.css",
+    "main.js": "/portfolio/static/js/main.f1602933.js",
     "static/media/curriculumEN.pdf": "/portfolio/static/media/curriculumEN.2c1c688efbca119bd89d.pdf",
     "static/media/curriculumES.pdf": "/portfolio/static/media/curriculumES.36d7dce1ba729673a7d6.pdf",
     "static/media/MARCADEAGUANEGRA1.webp": "/portfolio/static/media/MARCADEAGUANEGRA1.b3eb63d76ea71047ad8d.webp",
@@ -17,11 +17,11 @@
     "static/media/tailwind-css.svg": "/portfolio/static/media/tailwind-css.1ff53afb0748cd483d5f0ed13029f287.svg",
     "static/media/firebase.svg": "/portfolio/static/media/firebase.c55df03130647cc8ee934a0a6ebecf70.svg",
     "static/media/no-country.webp": "/portfolio/static/media/no-country.ad88e396a72ea3d7558f.webp",
-    "main.37eeb264.css.map": "/portfolio/static/css/main.37eeb264.css.map",
-    "main.b31272ee.js.map": "/portfolio/static/js/main.b31272ee.js.map"
+    "main.2a719f5d.css.map": "/portfolio/static/css/main.2a719f5d.css.map",
+    "main.f1602933.js.map": "/portfolio/static/js/main.f1602933.js.map"
   },
   "entrypoints": [
-    "static/css/main.37eeb264.css",
-    "static/js/main.b31272ee.js"
+    "static/css/main.2a719f5d.css",
+    "static/js/main.f1602933.js"
   ]
 }
