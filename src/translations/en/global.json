@@ -1,7 +1,10 @@
 {
   "home": {
     "frontend": "Front-end Developer Jr.",
-    "description": "Passionate about web programming with React and self-directed development.",
+    "description-1": "With",
+    "description-2": " +1 year ",
+    "description-3": "of experience using React, Typescript y Next.js.",
+    "description-4": "Learn more about me!",    
     "nav-link-1": "Home",
     "nav-link-2": "Experience",
     "nav-link-3": "About",

@@ -89,8 +89,14 @@ export function Description() {
   return (
     <>
       <p className="d-flex justify-content-center text-center text-white mt-5 px-2">
-        {t("home.description")}
+        {t("home.description-1")}
+        <div className="year-text">{t("home.description-2")}</div>
+        {t("home.description-3")}
       </p>
+      <h4 style={{color:"#818181"}} className="d-flex align-items-center justify-content-center text-center fs-6">
+        <span className="">{t("home.description-4")}</span>
+        <i style={{fontSize: "0.8rem"}} className="bi bi-arrow-down ms-2"> </i> 
+      </h4>
       <div className="d-flex gap-2 flex-wrap justify-content-center">
         <a
           className="text-black text-decoration-none fw-semibold btn-primary rounded-1 px-3 py-1 border-0"

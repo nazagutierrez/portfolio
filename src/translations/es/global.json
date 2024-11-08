@@ -1,7 +1,10 @@
 {
   "home": {
     "frontend": "Desarrollador Frontend Jr.",
-    "description": "Apasionado de la programación web con React y el desarrollo autodidacta.",
+    "description-1": "Con",
+    "description-2": " +1 año ",
+    "description-3": "de experiencia utilizando React, Typescript y Next.js.",
+    "description-4": "Conoce mas de mi!",
     "nav-link-1": "Inicio",
     "nav-link-2": "Experiencia",
     "nav-link-3": "Sobre mi",
