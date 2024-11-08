@@ -7,15 +7,17 @@ html {
   font-size: 23px;
 }
 
+.year-text {
+  color: $mainColor;
+  display: contents;
+}
+
 .cards-section {
   @media (max-width: 767px) {
-    margin-top: -50px;
-  }
-  @media (max-width: 567px) {
-    margin-top: 20px;
+    margin-top: 30px;
   }
   @media (min-width: 768px) {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 }
 
