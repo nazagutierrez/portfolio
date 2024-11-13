@@ -99,7 +99,7 @@ export function Description() {
       </h4>
       <div className="d-flex gap-2 flex-wrap justify-content-center">
         <a
-          className="text-black text-decoration-none fw-semibold btn-primary rounded-1 px-3 py-1 border-0"
+          className="text-black text-center text-decoration-none fw-semibold btn-primary rounded-1 px-3 py-1 border-0"
           href={resumeEN}
           target="_blank"
           rel="noreferrer"
@@ -107,7 +107,7 @@ export function Description() {
           Resume EN
         </a>
         <a
-          className="text-black text-decoration-none fw-semibold btn-primary rounded-1 px-3 py-1 border-0"
+          className="text-black text-center text-decoration-none fw-semibold btn-primary rounded-1 px-3 py-1 border-0"
           href={resumeES}
           target="_blank"
           rel="noreferrer"
