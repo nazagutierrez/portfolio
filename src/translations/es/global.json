@@ -1,8 +1,8 @@
 {
   "home": {
-    "frontend": "Desarrollador Frontend Jr.",
+    "frontend": "Desarrollador Frontend",
     "description-1": "Con",
-    "description-2": " +1 año ",
+    "description-2": " +2 años ",
     "description-3": "de experiencia utilizando React, Typescript y Next.js.",
     "description-4": "Conoce mas de mi!",
     "nav-link-1": "Inicio",
@@ -26,11 +26,11 @@
   "about": {
     "title": "Sobre mi",
     "description-a": "Desarrollador Frontend con",
-    "description-b": "+1 año",
+    "description-b": "+2 años",
     "description-c": "de experiencia laboral. Creativo, curioso y en constante aprendizaje. Centrado en encontrar y resolver el problema y diseñar páginas. Capaz de hacer webs estéticas y funcionales a pedido del cliente.",
 
     "description2-a": "Aprendí conceptos básicos y avanzados de programación",
-    "description2-b": "a lo largo de 2 años de ser autodidacta",
+    "description2-b": "a lo largo de 3 años de ser autodidacta",
     "description2-c": "y estudiar en cursos, principalmente enfocados a React con Next.js. Además he aprendido backend para enrutamiento y peticiones básicas con Node y Express.",
 
     "description3": "¡No dudes en contactarme en cualquier momento para saber más sobre mí!",

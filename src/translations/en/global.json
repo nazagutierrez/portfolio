@@ -1,8 +1,8 @@
 {
   "home": {
-    "frontend": "Front-end Developer Jr.",
+    "frontend": "Front-end Developer",
     "description-1": "With",
-    "description-2": " +1 year ",
+    "description-2": " +2 year ",
     "description-3": "of experience using React, Typescript y Next.js.",
     "description-4": "Learn more about me!",    
     "nav-link-1": "Home",
@@ -26,11 +26,11 @@
   "about": {
     "title": "About me",
     "description-a": "Frontend Developer with",
-    "description-b": "+1 year",
+    "description-b": "+2 years",
     "description-c": "of work experience. Creative, curious and constantly learning. Focused on finding and solving the problem and designing pages. Able to make esthetics and functional web pages to the client's request.",
     
     "description2-a": "I learned basic and advanced programming concepts over",
-    "description2-b": "2 years of being self-taught",
+    "description2-b": "3 years of being self-taught",
     "description2-c": "and studying in courses, mainly focused on React with Next.js. I have also learned backend for routing and basic requests with Node and Express.",
 
     "description3": "Feel free to reach out anytime to connect or learn more about what I do!",
