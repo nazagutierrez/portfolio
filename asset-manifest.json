@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.2a719f5d.css",
-    "main.js": "/portfolio/static/js/main.f1602933.js",
-    "static/media/curriculumEN.pdf": "/portfolio/static/media/curriculumEN.2c1c688efbca119bd89d.pdf",
-    "static/media/curriculumES.pdf": "/portfolio/static/media/curriculumES.36d7dce1ba729673a7d6.pdf",
+    "main.js": "/portfolio/static/js/main.4e52c9d9.js",
+    "static/media/curriculumES.pdf": "/portfolio/static/media/curriculumES.352746302bddbe055488.pdf",
+    "static/media/curriculumEN.pdf": "/portfolio/static/media/curriculumEN.66ea1bcacc5931322d09.pdf",
     "static/media/MARCADEAGUANEGRA1.webp": "/portfolio/static/media/MARCADEAGUANEGRA1.b3eb63d76ea71047ad8d.webp",
     "static/media/fotonaza3-no-bg.webp": "/portfolio/static/media/fotonaza3-no-bg.ea8ecd60c8d5e563d4ba.webp",
     "static/media/next-js.webp": "/portfolio/static/media/next-js.d05de74db008ce8f4cb3.webp",
@@ -18,10 +18,10 @@
     "static/media/firebase.svg": "/portfolio/static/media/firebase.c55df03130647cc8ee934a0a6ebecf70.svg",
     "static/media/no-country.webp": "/portfolio/static/media/no-country.ad88e396a72ea3d7558f.webp",
     "main.2a719f5d.css.map": "/portfolio/static/css/main.2a719f5d.css.map",
-    "main.f1602933.js.map": "/portfolio/static/js/main.f1602933.js.map"
+    "main.4e52c9d9.js.map": "/portfolio/static/js/main.4e52c9d9.js.map"
   },
   "entrypoints": [
     "static/css/main.2a719f5d.css",
-    "static/js/main.f1602933.js"
+    "static/js/main.4e52c9d9.js"
   ]
 }
