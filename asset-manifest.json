@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.2a719f5d.css",
-    "main.js": "/portfolio/static/js/main.cab668ae.js",
+    "main.js": "/portfolio/static/js/main.b4cfcd50.js",
     "static/media/curriculumES.pdf": "/portfolio/static/media/curriculumES.9c0a53a3126f91c3b264.pdf",
     "static/media/curriculumEN.pdf": "/portfolio/static/media/curriculumEN.a9f242e93c5465a51527.pdf",
     "static/media/MARCADEAGUANEGRA1.webp": "/portfolio/static/media/MARCADEAGUANEGRA1.b3eb63d76ea71047ad8d.webp",
@@ -18,10 +18,10 @@
     "static/media/firebase.svg": "/portfolio/static/media/firebase.c55df03130647cc8ee934a0a6ebecf70.svg",
     "static/media/no-country.webp": "/portfolio/static/media/no-country.ad88e396a72ea3d7558f.webp",
     "main.2a719f5d.css.map": "/portfolio/static/css/main.2a719f5d.css.map",
-    "main.cab668ae.js.map": "/portfolio/static/js/main.cab668ae.js.map"
+    "main.b4cfcd50.js.map": "/portfolio/static/js/main.b4cfcd50.js.map"
   },
   "entrypoints": [
     "static/css/main.2a719f5d.css",
-    "static/js/main.cab668ae.js"
+    "static/js/main.b4cfcd50.js"
   ]
 }
