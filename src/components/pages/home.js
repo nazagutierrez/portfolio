@@ -7,16 +7,41 @@ import resumeEN from "../../resumes/curriculumEN.pdf";
 const Nav = () => {
   const [t] = useTranslation("global");
   return (
-    <>
-    {/* <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
-      <div class="offcanvas offcanvas-end" tabindex="1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header text-white">
-          <h1>HOLAAA</h1>
-          <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div className="position-relative w-auto h-100">
+      {/* <button className="position-absolute top start-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">|||</button>
+      <div className="offcanvas offcanvas-end" tabindex="1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div className="offcanvas-header text-white">
+          <div id="offcanvasRightLabel"></div>
+          <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-          ...
+        <div className="offcanvas-body">
+        <ul className="navbar-nav" style={{fontSize: "1.2rem"}}>
+          <li className="nav-item">
+            <a className="nav-link" href="#Home">
+              {t("home.nav-link-1")}
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#Projects">
+              {t("home.nav-link-2")}
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#About">
+              {t("home.nav-link-3")}
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#Skills">
+              {t("home.nav-link-4")}
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#Contact">
+              {t("home.nav-link-5")}
+            </a>
+          </li>
+        </ul>
         </div>
       </div> */}
     <motion.nav
@@ -55,7 +80,7 @@ const Nav = () => {
         </ul>
       </div>
     </motion.nav>
-    </>
+    </div>
   );
 };
 
@@ -68,7 +93,8 @@ export function Me() {
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="d-flex justify-content-center text-center text-white mt-5-md"
+        style={{ marginTop: "100px" }}
+        className="d-flex justify-content-center text-center text-white"
       >
         Nazareno Gutierrez
       </motion.h1>
@@ -88,10 +114,13 @@ export function Description() {
   const [t] = useTranslation("global");
   return (
     <>
-      <p className="d-flex justify-content-center text-center text-white mt-5 px-2">
+      <p className="d-flex justify-content-center text-center text-white mt-5 mb-1 px-2">
         {t("home.description-1")}
         <div className="year-text">{t("home.description-2")}</div>
         {t("home.description-3")}
+      </p>
+      <p className="d-flex justify-content-center text-center text-white px-2">
+        {t("home.challenges")}
       </p>
       <h4 style={{color:"#818181"}} className="d-flex align-items-center justify-content-center text-center fs-6">
         <span className="">{t("home.description-4")}</span>
