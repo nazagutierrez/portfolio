@@ -10,6 +10,8 @@ import FixedButtons from "./components/fixedButtons";
 import Nav, { Description, Me } from "./components/pages/home";
 import Footer from "./components/pages/footer";
 import Skills, { SkillsTitle } from "./components/pages/skills/skills";
+import waveYellowSvg from "./images/wave-yellow.svg";
+import waveBlackSvg from "./images/wave-black.svg";
 
 function Box({ page, delay, finalX, initialX }) {
   const animation = useAnimation();
@@ -43,21 +45,27 @@ function App() {
     <div className="App">
       <div className="contain">
         <section id="Home">
-          <Nav />
-          <Box page={<Me />} />
-          <Description />
+          <div className="d-flex justify-content-between flex-column">
+            <Nav />
+            <Box page={<Me />} />
+            <Description />
+          </div>
         </section>
+        <img src={waveYellowSvg} alt="wave" style={{width: "100%", marginBlock: "-1px"}} />
         <section id="Projects">
           <Box page={<Title />} initialX={-100} finalX={0} />
           <Box page={<Cards />} initialX={-100} finalX={0} delay={0.3}/>
+          <img src={waveBlackSvg} alt="wave" style={{width: "100%", marginBlock: "-1px"}} />
         </section>
         <section id="About">
           <Box page={<AboutMe />} initialX={-100} finalX={0} />
         </section>
+        <img src={waveYellowSvg} alt="wave" style={{width: "100%", marginBlock: "-1px"}} />
         <section id="Skills">
           <Box page={ <SkillsTitle /> } initialX={-100} finalX={0} />
           <Box page={<Skills />} initialX={-100} finalX={0} delay={0.3}/>
         </section>
+        <img src={waveBlackSvg} alt="wave" style={{width: "100%", marginBlock: "-1px"}} />
         <section id="Contact">
           <div className="w-100">
             <Box page={<Contact />} initialX={-100} finalX={0} />
