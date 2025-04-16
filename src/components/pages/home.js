@@ -93,8 +93,7 @@ export function Me() {
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        style={{ marginTop: "100px" }}
-        className="d-flex justify-content-center text-center text-white"
+        className="d-flex justify-content-center text-center text-white name-title"
       >
         Nazareno Gutierrez
       </motion.h1>

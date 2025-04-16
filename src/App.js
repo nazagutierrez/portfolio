@@ -51,21 +51,21 @@ function App() {
             <Description />
           </div>
         </section>
-        <img src={waveYellowSvg} alt="wave" style={{width: "100%", marginBlock: "-1px"}} />
+        <img src={waveYellowSvg} alt="wave" style={{width: "100dvw", marginBlock: "-1px"}} />
         <section id="Projects">
           <Box page={<Title />} initialX={-100} finalX={0} />
           <Box page={<Cards />} initialX={-100} finalX={0} delay={0.3}/>
-          <img src={waveBlackSvg} alt="wave" style={{width: "100%", marginBlock: "-1px"}} />
+          <img src={waveBlackSvg} alt="wave" style={{width: "100dvw", marginBlock: "-1px"}} />
         </section>
         <section id="About">
           <Box page={<AboutMe />} initialX={-100} finalX={0} />
         </section>
-        <img src={waveYellowSvg} alt="wave" style={{width: "100%", marginBlock: "-1px"}} />
+        <img src={waveYellowSvg} alt="wave" style={{width: "100dvw", marginBlock: "-1px"}} />
         <section id="Skills">
           <Box page={ <SkillsTitle /> } initialX={-100} finalX={0} />
           <Box page={<Skills />} initialX={-100} finalX={0} delay={0.3}/>
         </section>
-        <img src={waveBlackSvg} alt="wave" style={{width: "100%", marginBlock: "-1px"}} />
+        <img src={waveBlackSvg} alt="wave" style={{width: "100dvw", marginBlock: "-1px"}} />
         <section id="Contact">
           <div className="w-100">
             <Box page={<Contact />} initialX={-100} finalX={0} />

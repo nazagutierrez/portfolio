@@ -14,14 +14,21 @@ body {
   }
 }
 
-.App {
-  font-family: $tipografia-principal;
-}
 
 strong {
   font-size: 70px;
   padding-bottom: 60px;
   color: #2e2e2ec4;
+}
+
+.App {
+  font-family: $tipografia-principal;
+}
+
+.name-title {
+  margin-top: 100px;  
+  @media (max-width: 767px) {margin-top: 50px;}
+  @media (max-width: 567px) {margin-top: 0px;}
 }
 
 .pre-strong {
@@ -115,7 +122,7 @@ strong {
   justify-content: center;
   min-height: 100vh;
 }
-#Projects {  justify-content: flex-start}
+#Projects {  justify-content: flex-start; }
 
 #Home,
 #Skills,
