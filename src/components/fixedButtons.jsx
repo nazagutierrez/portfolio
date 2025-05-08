@@ -1,37 +1,50 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-
+import { svgRender } from "./utils/svgRender";
 
 const FixedButtons = () => {
-  const [,i18n] = useTranslation("global")
+  const [, i18n] = useTranslation("global");
+  
   return (
     <motion.div
-      className="m-2 fixed-bottom d-flex flex-column"
+      className="flex-col text-white fixed bottom-0 hidden sm:flex items-center justify-center gap-1 m-2"
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 2 }}>
-
-      <div className="btn-group-vertical btn-group-sm lng-btns" role="group" aria-label="lng toggle">
-          <input type="radio" className="btn-check" name="vbtn-radio" id="btn-en" autoComplete="off" defaultChecked/>
-          <label className="social-icon btn btn-dark d-flex justify-content-center align-items-center rounded-circle mb-1" htmlFor="btn-en" onClick={() => i18n.changeLanguage("en")}>EN</label>
-          <input type="radio" className="btn-check" name="vbtn-radio" id="btn-es" autoComplete="off"/>
-          <label className="social-icon btn btn-dark d-flex justify-content-center align-items-center rounded-circle mb-0 mb-sm-1" htmlFor="btn-es" onClick={() => i18n.changeLanguage("es")}>ES</label>
-      </div>
-
-      <div className="d-none d-sm-block">
-        <a
-          className="social-icon btn btn-dark bi-linkedin d-flex justify-content-center align-items-center rounded-circle mb-1"
-          href="https://www.linkedin.com/in/nazarenogutierrez1/"
-          target="_blank"
-          rel="noreferrer"> </a>
-
-        <a
-          className="social-icon btn btn-dark bi-github d-flex justify-content-center align-items-center rounded-circle"
-          href="https://github.com/nazagutierrez"
-          target="_blank"
-          rel="noreferrer"> </a>
-      </div>
+      transition={{ duration: 2 }}
+    >
+      <button
+        className={`flex text-sm items-center justify-center cursor-pointer w-10 h-10 bg-[#2c2c2c] border border-[#2c2c2c] rounded-full transition-all ${i18n.resolvedLanguage === "en" && "bg-[#464646] border border-gray-main/40"}`}
+        onClick={() => i18n.changeLanguage("en")}
+        target="_blank"
+        rel="noreferrer"
+      >
+        EN
+      </button>
+      <button
+        className={`flex text-sm items-center justify-center cursor-pointer w-10 h-10 bg-[#2c2c2c] border border-[#2c2c2c] rounded-full transition-all ${i18n.resolvedLanguage === "es" && "bg-[#464646] border border-gray-main/40"}`}
+        onClick={() => i18n.changeLanguage("es")}
+        target="_blank"
+        rel="noreferrer"
+      >
+        ES
+      </button>
+      <a
+        className="flex items-center justify-center cursor-pointer w-10 h-10 bg-[#2c2c2c] rounded-full"
+        href="https://www.linkedin.com/in/nazarenogutierrez1/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        {svgRender("linkedin")}
+      </a>
+      <a
+        className="flex items-center justify-center cursor-pointer w-10 h-10 bg-[#2c2c2c] rounded-full"
+        href="https://github.com/nazagutierrez"
+        target="_blank"
+        rel="noreferrer"
+      >
+        {svgRender("github")}
+      </a>
     </motion.div>
   );
 };

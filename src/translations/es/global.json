@@ -5,7 +5,7 @@
     "description-1": "Con",
     "description-2": " +2 años ",
     "description-3": "de experiencia utilizando React, Typescript y Next.js.",
-    "description-4": "Conoce mas de mi!",
+    "description-4": "Abre mi CV!",
     "nav-link-1": "Inicio",
     "nav-link-2": "Experiencia",
     "nav-link-3": "Sobre mi",
@@ -48,10 +48,10 @@
   "contact": {
     "title": "Contactame",
     "email-header": "Salúdame o hablemos de proyectos futuros",
-    "call-header": "Llámame o envíame un mensaje",
+    "call-header": "Envíame un mensaje",
     "social-header": "Mis redes sociales",
     "send": "Enviar",
-    "call": "Llamar",
+    "chat": "Chat",
     "copy": "Copiar",
     "copied": "Copiado!"
   },

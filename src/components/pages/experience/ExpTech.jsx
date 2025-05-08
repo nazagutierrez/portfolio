@@ -3,7 +3,7 @@ import imgExports from "../../../images/imgExports";
 
 const TechCard = ({ img, alt, className = "exp-tech-img" }) => {
   return (
-    <span style={{ padding: "4px" }} className="bg-dark rounded-1 d-inline-flex align-items-center">
+    <span className="bg-black-main rounded-md inline-flex items-center p-1">
       <img src={img} className={className} alt={alt} />
     </span>
   );
@@ -22,7 +22,7 @@ const ExpTech = ({ expName }) => {
   };
 
   return (
-    <div className="d-flex align-items-start w-100 gap-1 flex-wrap">
+    <div className="flex items-start w-full gap-1 flex-wrap">
       {expName === "mens-house-barber" && (
         <>
           <TechCard img={imgExports.nextjs} alt="nextjs" />

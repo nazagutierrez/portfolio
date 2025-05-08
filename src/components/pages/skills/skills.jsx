@@ -74,8 +74,8 @@ let skills = [
 
 function Skills() {
   return (
-    <div className="d-flex justify-content-center skills-container">
-      <div className="d-flex mt-sm-3 flex-wrap gap-2 justify-content-center col-md-8">
+    <div className="flex justify-center skills-container">
+      <div className="flex mt-3 flex-wrap gap-2 justify-center md:w-8/12">
         {skills.map((skill) => (
           <div className="skill-card" key={skill.id}>
             <Skill image={skill.image} title={skill.title} />
@@ -83,17 +83,19 @@ function Skills() {
         ))}
       </div>
     </div>
+
   );
 }
 
 export function SkillsTitle() {
     const [t] = useTranslation("global");
   return (
-    <div className="mt-5 mt-lg-0">
-      <h1 className="justify-content-center text-center fs-2 container mb-4 mt-sm-0 mt-5 underline-black">
+    <div className="mt-5 lg:mt-0">
+      <h1 className="text-center text-title container mb-4 sm:mt-0 mt-5 underline-black">
         {t("skills.title")}
       </h1>
     </div>
+
   );
 }
 

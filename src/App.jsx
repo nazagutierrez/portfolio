@@ -1,7 +1,7 @@
-import "../src/styles/App.scss";
+import "../src/styles/App.css";
 
 import AboutMe from "./components/pages/aboutMe";
-import Cards, { Title } from "./components/pages/projects/cards";
+import Cards, { Title } from "./components/pages/experience/cards";
 import { motion, useAnimation } from "framer-motion";
 import Contact from "./components/pages/contact";
 import { useInView } from "react-intersection-observer";
@@ -43,41 +43,40 @@ function Box({ page, delay, finalX, initialX }) {
 function App() {
   return (
     <div className="App">
-      <div className="contain">
-        <section id="Home">
-          <div className="d-flex justify-content-between flex-column">
-            <Nav />
-            <Box page={<Me />} />
-            <Description />
-          </div>
-        </section>
-        <img src={waveYellowSvg} alt="wave" style={{width: "100dvw", marginBlock: "-1px"}} />
-        <section id="Projects">
-          <Box page={<Title />} initialX={-100} finalX={0} />
-          <Box page={<Cards />} initialX={-100} finalX={0} delay={0.3}/>
-          <img src={waveBlackSvg} alt="wave" style={{width: "100dvw", marginBlock: "-1px"}} />
-        </section>
-        <section id="About">
-          <Box page={<AboutMe />} initialX={-100} finalX={0} />
-        </section>
-        <img src={waveYellowSvg} alt="wave" style={{width: "100dvw", marginBlock: "-1px"}} />
-        <section id="Skills">
-          <Box page={ <SkillsTitle /> } initialX={-100} finalX={0} />
-          <Box page={<Skills />} initialX={-100} finalX={0} delay={0.3}/>
-        </section>
-        <img src={waveBlackSvg} alt="wave" style={{width: "100dvw", marginBlock: "-1px"}} />
-        <section id="Contact">
-          <div className="w-100">
-            <Box page={<Contact />} initialX={-100} finalX={0} />
-          </div>
-        </section>
-        <section id="Footer">
-          <Footer />
-        </section>
-        <div>
-          <FixedButtons />
-        </div>
-      </div>
+      <section id="Home">
+        <Nav />
+        <Box page={<Me />} />
+        <Description />
+      </section>
+
+      <img src={waveYellowSvg} alt="wave" className="w-[100dvw] -my-px" />
+
+      <section id="Projects">
+        <Box page={<Title />} initialX={-100} finalX={0} />
+        <Box page={<Cards />} initialX={-100} finalX={0} delay={0.3} />
+
+        <img src={waveBlackSvg} alt="wave" className="w-[100dvw] -my-px" />
+      </section>
+
+      <section id="About">
+        <Box page={<AboutMe />} initialX={-100} finalX={0} />
+      </section>
+
+      <img src={waveYellowSvg} alt="wave" className="w-[100dvw] -my-px" />
+
+      <section id="Skills">
+        <Box page={<SkillsTitle />} initialX={-100} finalX={0} />
+        <Box page={<Skills />} initialX={-100} finalX={0} delay={0.3} />
+      </section>
+
+      <img src={waveBlackSvg} alt="wave" className="w-[100dvw] -my-px" />
+
+      <section className="relative z-0" id="Contact">
+        <Box page={<Contact />} initialX={-100} finalX={0} />
+        <Footer />
+      </section>
+
+      <FixedButtons />
     </div>
   );
 }
