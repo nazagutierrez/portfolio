@@ -36,6 +36,12 @@ export const svgRender = ( type ) => {
             <path fill="none" d="M0 0h24v24H0z"></path><path d="M6 17.59 7.41 19 12 14.42 16.59 19 18 17.59l-6-6z"></path><path d="m6 11 1.41 1.41L12 7.83l4.59 4.58L18 11l-6-6z"></path>
           </svg>
         )}
+        {type === "link" && (
+          <svg className="text-black-main text-xl ms-2 inline-block" stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353.75.75 0 0 0-1.18.928 5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z"></path>
+            <path d="M7.28 11.153a3.936 3.936 0 0 1 5.88.353.75.75 0 0 0 1.18-.928 5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z"></path>
+          </svg>
+        )}
       </>
     )
   }
