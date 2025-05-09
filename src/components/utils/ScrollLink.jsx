@@ -3,11 +3,11 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 gsap.registerPlugin(ScrollToPlugin);
 
-const ScrollLink = ({ to, children, center = false }) => {
+const ScrollLink = ({ to, children, center = false, ...props }) => {
   return (
     <a
+      {...props}
       href={to}
-      className="nav-link"
       onClick={(e) => {
         e.preventDefault();
         const target = document.querySelector(to);
