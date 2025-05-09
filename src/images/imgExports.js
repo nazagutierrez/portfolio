@@ -11,7 +11,7 @@ import nextjs from "./next-js.webp";
 import firebase from "./firebase.svg";
 import tailwindcss from "./tailwind-css.svg";
 import noBgProfile from "./fotonaza3-no-bg.webp";
-import mensHouseLogo from "./MARCADEAGUANEGRA1.webp";
+import mensHouseLogo from "./logo-peluqueria.jpg";
 import tpeo from "./tpeo.png";
 import noCountry from "./no-country.webp";
 import typescript from "./typescript.svg";
