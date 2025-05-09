@@ -16,6 +16,7 @@ import tpeo from "./tpeo.png";
 import noCountry from "./no-country.webp";
 import typescript from "./typescript.svg";
 import astro from "./astro.svg"
+import gsap from "./gsap.svg"
 
 export default {
   reactImg,
@@ -36,4 +37,5 @@ export default {
   mensHouseLogo,
   typescript,
   astro,
+  gsap
 };
