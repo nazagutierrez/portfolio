@@ -8,7 +8,7 @@ const FixedButtons = () => {
   
   return (
     <motion.div
-      className="flex-col text-white fixed bottom-0 hidden sm:flex items-center justify-center gap-1 m-2"
+      className="flex-col text-white fixed bottom-0 hidden sm:flex items-center justify-center gap-1 m-2 z-10"
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 2 }}
