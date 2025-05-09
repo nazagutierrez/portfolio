@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 import Skill from "./skill";
 import images from "../../../images/imgExports";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 let skills = [
   {
@@ -29,6 +33,11 @@ let skills = [
     id: crypto.randomUUID(),
     image: images.tailwindcss,
     title: "TailwindCSS"    
+  },
+    {
+    id: crypto.randomUUID(),
+    image: images.gsap,
+    title: "GSAP"    
   },
   {
     id: crypto.randomUUID(),
@@ -72,31 +81,56 @@ let skills = [
   }
 ];
 
-function Skills() {
+export function Skills() {
+  const skillsRef = useRef();
+  const skillsTitleRef = useRef();
+
+  useEffect(() => {
+    gsap.fromTo(
+      skillsTitleRef.current,
+      { opacity: 0, x: -100 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: skillsTitleRef.current,
+          start: "top 80%",
+        },
+      }
+    );
+    gsap.fromTo(
+      skillsRef.current,
+      { opacity: 0, x: -100 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 0.8,
+        scrollTrigger: {
+          trigger: skillsRef.current,
+          start: "top 80%",
+        },
+      }
+    );
+  }, []);
+  
+  const [t] = useTranslation("global");
+
   return (
-    <div className="flex justify-center skills-container">
-      <div className="flex mt-3 flex-wrap gap-2 justify-center md:w-8/12">
+    <section className="flex flex-col justify-center selectable-black items-center bg-bg-yellow py-10" id="Skills">
+      <div className="mt-5 lg:mt-0">
+        <h1 className="text-center text-title mb-4 sm:mt-0 mt-5 underline-black" ref={skillsTitleRef}>
+          {t("skills.title")}
+        </h1>
+      </div>
+      <div className="flex mt-3 flex-wrap gap-2 justify-center mx-40" ref={skillsRef}>
         {skills.map((skill) => (
           <div className="skill-card" key={skill.id}>
             <Skill image={skill.image} title={skill.title} />
           </div>
         ))}
       </div>
-    </div>
+    </section>
 
   );
 }
-
-export function SkillsTitle() {
-    const [t] = useTranslation("global");
-  return (
-    <div className="mt-5 lg:mt-0">
-      <h1 className="text-center text-title container mb-4 sm:mt-0 mt-5 underline-black">
-        {t("skills.title")}
-      </h1>
-    </div>
-
-  );
-}
-
-export default Skills;
