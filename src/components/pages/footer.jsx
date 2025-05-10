@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 
 function Footer() {
@@ -7,7 +6,7 @@ function Footer() {
   const date = `${current.getFullYear()}`;
 
   return (
-    <div className="h-10 text-gray-main/90 text-xs absolute bottom-0 flex space-y-2 justify-center align-center w-full gap-4">
+    <div className="h-10 text-center px-4 text-gray-main/90 text-xs absolute selectable-yellow bottom-0 flex space-y-2 justify-center align-center w-full gap-4">
       <div className="self-center">
         <span>© Copyright </span>
         <span>{date}.</span>
