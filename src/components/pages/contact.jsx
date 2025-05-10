@@ -1,97 +1,138 @@
-import React, { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { svgRender } from "../utils/svgRender";
+import Footer from "./footer";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ScrollLink from "../utils/ScrollLink";
 
-function Contact() {
-  const [t] = useTranslation("global")
-  const [copiedText, setCopiedText] = useState(null);
+gsap.registerPlugin(ScrollTrigger);
 
-  const handleCopy = (textToCopy) => {
-    navigator.clipboard.writeText(textToCopy)
-      .then(() => setCopiedText(textToCopy))
-      .catch((error) => console.error("Error al copiar el texto:", error));
-  };
+const socials = [
+  { name: "Linkedin", icon: "linkedin", url: "https://www.linkedin.com/in/nazarenogutierrez1" },
+  { name: "Github", icon: "github", url: "https://github.com/nazagutierrez" },
+  { name: "Twitter", icon: "twitter", url: "https://x.com/nazadevv" },
+];
 
-  const ContactButton = ({ text = "", type }) => (
-    <a
-      className="bg-yellow-main cursor-pointer rounded-sm border-0 w-24 flex items-center justify-center gap-2"
-      href={type === "send" ? `mailto:nazarenojunin@gmail.com` : type === "chat" && `https://wa.me/5492364329720?text=Hola!`}
-      target="_blank"
-      rel="noreferrer"
-      onClick={() => type === "copy" ? handleCopy(text) : null}
-    >
-      {type === "send" && svgRender("send")}
-      {type === "chat" && svgRender("chat")}
-      {type === "copy" && svgRender("copy")}
-      {t(`contact.${type === "copy" ? copiedText === text ? "copied" : type : type}`)}
-    </a>
-  );
+const ContactButton = ({ text = "", type, copiedText, handleCopy, t }) => {
+  const icons = { send: "send", chat: "chat", copy: "copy" };
+  const href = { send: "mailto:nazarenojunin@gmail.com", chat: "https://wa.me/5492364329720?text=Hola!" }[type];
+  const label = type === "copy" && copiedText === text ? t("contact.copied") : t(`contact.${type}`);
 
   return (
-    <div className="relative h-full w-full flex flex-col gap-1 items-start justify-start ms-0 mb-5 space-y-4">
-      <h2 className="mb-5 text-title text-white-main underline-yellow">
-        {t("contact.title")}
-      </h2>
+    <a
+      className="styled-button rounded-sm w-20 py-px gap-2" 
+      href={href || "#"}
+      target="_blank"
+      rel="noreferrer"
+      onClick={(e) => {
+        if (type === "copy") {
+          e.preventDefault();
+          handleCopy(text);
+        }
+      }}
+    
+    >
+      {svgRender(icons[type])}
+      {label}
+    </a>
+  );
+};
+
+function Contact() {
+  const [t] = useTranslation("global");
+  const [copiedText, setCopiedText] = useState(null);
+  const contactRef = useRef();
+
+  useEffect(() => {
+    gsap.fromTo(
+      contactRef.current,
+      { opacity: 0, x: -100 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 0.8,
+        scrollTrigger: {
+          trigger: contactRef.current,
+          start: "top 80%",
+        },
+      }
+    );
+  }, []);
+
+
+  const handleCopy = (text) => {
+    navigator.clipboard.writeText(text)
+      .then(() => setCopiedText(text))
+      .catch(console.error);
+  };
+
+  const infoSections = [
+    {
+      label: t("contact.email-header"),
+      value: "nazarenojunin@gmail.com",
+      buttons: ["copy", "send"],
+    },
+    {
+      label: t("contact.call-header"),
+      value: "(+54) 236 432 9720",
+      buttons: ["copy", "chat"],
+      copyText: "+542364329720",
+    },
+  ];
+
+  return (
+    <section id="Contact" ref={contactRef} className="relative pt-20 pb-32 mx-1 sm:mx-10 lg:mx-44 selectable-yellow flex flex-col gap-6 px-2">
+      <h2 className="text-title text-white-main underline-yellow mb-4">{t("contact.title")}</h2>
+
+      {infoSections.map(({ label, value, buttons, copyText }, i) => (
+        <div key={i}>
+          <p className="text-gray-main/80 text-sm">{label}</p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <h1 className="text-white-main content-center sm:text-xl md:text-3xl font-mono wrap-break-word">{value}</h1>
+            <div className="flex sm:flex-col gap-2 items-start">
+              {buttons.map((type) => (
+                <ContactButton
+                  key={type}
+                  type={type}
+                  text={copyText || value}
+                  copiedText={copiedText}
+                  handleCopy={handleCopy}
+                  t={t}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+
       <div>
-        <p className="text-gray-main/80 text-sm mt-3">{t("contact.email-header")}</p>
-        <div className="flex flex-col sm:flex-row justify-start items-start gap-3">
-          <h1 className="self-start sm:self-center text-white-main text-3xl font-mono">nazarenojunin@gmail.com</h1>
-          <div className="flex sm:flex-col gap-2 items-start justify-center">
-            <ContactButton text="nazarenojunin@gmail.com" type="copy" />
-            <ContactButton type="send" />
-          </div>
+        <p className="text-gray-main/80 text-sm mb-1">{t("contact.social-header")}</p>
+        <div className="flex flex-wrap gap-2">
+          {socials.map(({ name, icon, url }) => (
+            <a
+              key={name}
+              className="w-20 px-px styled-button rounded-sm py-px gap-2"
+              href={url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {svgRender(icon)}
+              {name}
+            </a>
+          ))}
         </div>
       </div>
 
-      <div className="mt-5">
-        <p className="text-gray-main/80 text-sm">{t("contact.call-header")}</p>
-        <div className="flex flex-col sm:flex-row justify-start items-start gap-3">
-          <h1 className="self-start sm:self-center text-white-main text-3xl font-mono">(+54) 236 432 9720</h1>
-          <div className="flex sm:flex-col gap-2 items-center justify-center">
-            <ContactButton text="+542364329720" type="copy" />
-            <ContactButton type="chat" />
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-5">
-        <p className="text-gray-main/80 mb-2 text-sm">{t("contact.social-header")}</p>
-        <div className="flex flex-col sm:flex-row justify-start items-start gap-3">
-          <div className="contact-social flex-wrap flex gap-2 text-black items-center justify-center">
-            <a
-              className="w-24 bg-yellow-main rounded-sm border-0 flex items-center justify-center gap-2"
-              href="https://www.linkedin.com/in/nazarenogutierrez1"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {svgRender("linkedin")}
-              Linkedin
-            </a>
-            <a
-              className="w-24 bg-yellow-main rounded-sm border-0 flex items-center justify-center gap-2"
-              href="https://github.com/nazagutierrez"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {svgRender("github")}
-              Github
-            </a>
-            <a
-              className="w-24 bg-yellow-main rounded-sm border-0 flex items-center justify-center gap-2"
-              href="https://x.com/nazadevv"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {svgRender("twitter")}
-              Twitter
-            </a>
-          </div>
-        </div>
-      </div>
-      <a className="absolute text-xs flex items-center justify-center bg-yellow-main border-0 text-black-main rounded-full bottom-6 right-6 w-10 h-10" href="#Home">
+      <ScrollLink
+        className="absolute bottom-10 md:bottom-6 right-6 w-10 h-10 styled-button text-xs rounded-full z-10"
+        to="#Home"
+      >
         {svgRender("doubleArrowUp")}
-      </a>
-    </div>
+      </ScrollLink>
+
+      <Footer />
+    </section>
   );
 }
 
