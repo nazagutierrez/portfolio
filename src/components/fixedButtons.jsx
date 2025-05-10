@@ -14,7 +14,7 @@ const FixedButtons = () => {
       transition={{ duration: 2 }}
     >
       <button
-        className={`flex text-sm items-center justify-center cursor-pointer w-10 h-10 bg-[#2c2c2c] border border-[#2c2c2c] rounded-full transition-all ${i18n.resolvedLanguage === "en" && "bg-[#464646] border border-gray-main/40"}`}
+        className={`flex active:scale-95 will-change-transform hover:text-yellow-main text-sm items-center justify-center cursor-pointer w-10 h-10 bg-[#2c2c2c] border border-[#2c2c2c] rounded-full transition-all ${i18n.resolvedLanguage === "en" && "bg-[#464646] border border-gray-main/40"}`}
         onClick={() => i18n.changeLanguage("en")}
         target="_blank"
         rel="noreferrer"
@@ -22,7 +22,7 @@ const FixedButtons = () => {
         EN
       </button>
       <button
-        className={`flex text-sm items-center justify-center cursor-pointer w-10 h-10 bg-[#2c2c2c] border border-[#2c2c2c] rounded-full transition-all ${i18n.resolvedLanguage === "es" && "bg-[#464646] border border-gray-main/40"}`}
+        className={`flex active:scale-95 will-change-transform hover:text-yellow-main text-sm items-center justify-center cursor-pointer w-10 h-10 bg-[#2c2c2c] border border-[#2c2c2c] rounded-full transition-all ${i18n.resolvedLanguage === "es" && "bg-[#464646] border border-gray-main/40"}`}
         onClick={() => i18n.changeLanguage("es")}
         target="_blank"
         rel="noreferrer"
@@ -30,7 +30,7 @@ const FixedButtons = () => {
         ES
       </button>
       <a
-        className="flex items-center justify-center cursor-pointer w-10 h-10 bg-[#2c2c2c] rounded-full"
+        className="flex active:scale-95 will-change-transform hover:text-yellow-main items-center justify-center cursor-pointer w-10 h-10 bg-[#2c2c2c] rounded-full transition-all"
         href="https://www.linkedin.com/in/nazarenogutierrez1/"
         target="_blank"
         rel="noreferrer"
@@ -38,7 +38,7 @@ const FixedButtons = () => {
         {svgRender("linkedin")}
       </a>
       <a
-        className="flex items-center justify-center cursor-pointer w-10 h-10 bg-[#2c2c2c] rounded-full"
+        className="flex active:scale-95 will-change-transform hover:text-yellow-main items-center justify-center cursor-pointer w-10 h-10 bg-[#2c2c2c] rounded-full transition-all"
         href="https://github.com/nazagutierrez"
         target="_blank"
         rel="noreferrer"
