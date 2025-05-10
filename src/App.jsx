@@ -1,83 +1,70 @@
 import "../src/styles/App.css";
 
 import AboutMe from "./components/pages/aboutMe";
-import Cards, { Title } from "./components/pages/experience/cards";
-import { motion, useAnimation } from "framer-motion";
+import WorkExperience from "./components/pages/experience/WorkExperience";
 import Contact from "./components/pages/contact";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
 import FixedButtons from "./components/fixedButtons";
-import Nav, { Description, Me } from "./components/pages/home";
-import Footer from "./components/pages/footer";
-import Skills, { SkillsTitle } from "./components/pages/skills/skills";
+import { Home } from "./components/pages/home/home";
+import { Skills } from "./components/pages/skills/skills";
 import waveYellowSvg from "./images/wave-yellow.svg";
-import waveBlackSvg from "./images/wave-black.svg";
+import SmoothScrollWrapper from "./components/utils/SmoothScrollWrapper";
+import { Navbar } from "./components/pages/home/Navbar";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-function Box({ page, delay, finalX, initialX }) {
-  const animation = useAnimation();
-  const [ref, inView] = useInView({
-    threshold: 0.2,
-  });
-
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        opacity: 1,
-        x: finalX,
-        transition: { duration: 0.8, delay: delay },
-      });
-    }
-  }, [animation, inView, delay, finalX]);
-
-  return (
-    <motion.div
-      ref={ref}
-      animate={animation}
-      initial={{ opacity: 0, x: initialX }}
-    >
-      {page}
-    </motion.div>
-  );
-}
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
+    const waveTopRef = useRef();
+    const waveBottomRef = useRef();
+  
+    useEffect(() => {
+      gsap.fromTo(
+        waveTopRef.current,
+        { y: 30 },
+        {
+          y: 0,
+          duration: 1,
+        }
+      );
+      gsap.fromTo(
+        waveBottomRef.current,
+        { y: -40 },
+        {
+          y: 0,
+          duration: 1.5,
+          scrollTrigger: {
+            trigger: waveBottomRef.current,
+            start: "top 20%",
+            end: "bottom top",
+          },
+        }
+      );
+    }, []);
+
   return (
-    <div className="App">
-      <section id="Home">
-        <Nav />
-        <Box page={<Me />} />
-        <Description />
-      </section>
-
-      <img src={waveYellowSvg} alt="wave" className="w-[100dvw] -my-px" />
-
-      <section id="Projects">
-        <Box page={<Title />} initialX={-100} finalX={0} />
-        <Box page={<Cards />} initialX={-100} finalX={0} delay={0.3} />
-
-        <img src={waveBlackSvg} alt="wave" className="w-[100dvw] -my-px" />
-      </section>
-
-      <section id="About">
-        <Box page={<AboutMe />} initialX={-100} finalX={0} />
-      </section>
-
-      <img src={waveYellowSvg} alt="wave" className="w-[100dvw] -my-px" />
-
-      <section id="Skills">
-        <Box page={<SkillsTitle />} initialX={-100} finalX={0} />
-        <Box page={<Skills />} initialX={-100} finalX={0} delay={0.3} />
-      </section>
-
-      <img src={waveBlackSvg} alt="wave" className="w-[100dvw] -my-px" />
-
-      <section className="relative z-0" id="Contact">
-        <Box page={<Contact />} initialX={-100} finalX={0} />
-        <Footer />
-      </section>
-
+    <>
+      <Navbar />
       <FixedButtons />
-    </div>
+      <SmoothScrollWrapper>
+        <div className="App relative overflow-hidden">
+          <Home />
+          <img src={waveYellowSvg} ref={waveTopRef} alt="wave" className="w-[100dvw] pointer-events-none select-none -my-px sm:-my-3" />
+
+          <WorkExperience />
+          <img src={waveYellowSvg} alt="wave" className="w-[100dvw] rotate-180 pointer-events-none select-none -my-px sm:-my-3" />
+
+          <AboutMe />
+          <img src={waveYellowSvg} alt="wave" className="w-[100dvw] pointer-events-none select-none -my-px sm:-my-3" />
+
+          <Skills />
+          <img ref={waveBottomRef} src={waveYellowSvg} alt="wave" className="w-[100dvw] rotate-180 pointer-events-none select-none -my-px sm:-my-3" />
+
+          <Contact />
+        </div>
+      </SmoothScrollWrapper>
+    </>
   );
 }
 
