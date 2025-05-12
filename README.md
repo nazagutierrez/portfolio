@@ -1,6 +1,6 @@
 # My portfolio
 ## Description
-This is my portfolio, it was maded with ReactJS and styled by Bootstrap, Framer motion and Sass
+This is my portfolio, It's made with vanilla React, CSS, Tailwind and GSAP for animations.
 
 ## Author
 **Nazareno Gutierrez**
