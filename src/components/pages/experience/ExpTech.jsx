@@ -1,10 +1,10 @@
 import React from "react";
 import imgExports from "../../../images/imgExports";
 
-const TechCard = ({ img, alt, className = "exp-tech-img" }) => {
+const TechCard = ({ img, alt }) => {
   return (
-    <span className="bg-black-main rounded-md inline-flex items-center p-1">
-      <img src={img} className={className} alt={alt} />
+    <span className="bg-black-main rounded-md p-1">
+      <img src={img} className="w-4 object-contain" alt={alt} />
     </span>
   );
 };
@@ -22,7 +22,7 @@ const ExpTech = ({ expName }) => {
   };
 
   return (
-    <div className="flex items-start w-full gap-1 flex-wrap">
+    <div className="flex justify-start items-start w-full gap-1 flex-wrap">
       {expName === "mens-house-barber" && (
         <>
           <TechCard img={imgExports.nextjs} alt="nextjs" />
