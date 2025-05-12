@@ -117,15 +117,15 @@ export function Skills() {
   const [t] = useTranslation("global");
 
   return (
-    <section className="flex flex-col justify-center selectable-black items-center bg-bg-yellow py-10" id="Skills">
+    <section className="flex flex-col justify-center selectable-black items-center bg-bg-yellow pb-10 sm:pb-12 sm:py-12" id="Skills">
       <div className="mt-5 lg:mt-0">
         <h1 className="text-center text-title mb-4 sm:mt-0 mt-5 underline-black" ref={skillsTitleRef}>
           {t("skills.title")}
         </h1>
       </div>
-      <div className="flex mt-3 flex-wrap gap-2 justify-center mx-40" ref={skillsRef}>
+      <div className="flex mt-3 flex-wrap gap-2 justify-center mx-2 sm:mx-10 xl:mx-40" ref={skillsRef}>
         {skills.map((skill) => (
-          <div className="skill-card" key={skill.id}>
+          <div key={skill.id}>
             <Skill image={skill.image} title={skill.title} />
           </div>
         ))}
