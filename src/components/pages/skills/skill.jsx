@@ -6,11 +6,11 @@ function Skill({ image, title }) {
       <div className="skill-hover-effect bg-bg-black py-2 px-6 rounded-sm">
         <img
           src={image}
-          className="my-2 w-[100px] h-16 object-contain"
+          className="my-2 w-[50px] h-10 sm:w-[100px] sm:h-16 object-contain"
           alt={title}
         />
       </div>
-      <h3 className="text-black-main mt-1 font-medium max-w-[140px]">{title}</h3>
+      <h3 className="text-black-main mt-1 text-xs sm:text-base font-medium max-w-[140px]">{title}</h3>
     </div>
 
   );
