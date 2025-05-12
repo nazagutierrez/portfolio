@@ -22,6 +22,7 @@ const FixedButtons = () => {
 
   return (
     <div
+      ref={ref}
       className="flex-col text-white fixed bottom-0 hidden sm:flex items-center justify-center gap-1 m-2 z-10"
     >
       <button
