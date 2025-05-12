@@ -1,17 +1,28 @@
-import React from "react";
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { svgRender } from "./utils/svgRender";
+import gsap from "gsap";
+import { useEffect, useRef } from "react";
 
 const FixedButtons = () => {
+  const ref = useRef();
+
+  useEffect(() => {
+    gsap.fromTo(
+      ref.current,
+      { opacity: 0, x: -100 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+      }
+    );
+  }, []);
+
   const [, i18n] = useTranslation("global");
-  
+
   return (
-    <motion.div
+    <div
       className="flex-col text-white fixed bottom-0 hidden sm:flex items-center justify-center gap-1 m-2 z-10"
-      initial={{ opacity: 0, x: -100 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 2 }}
     >
       <button
         className={`flex active:scale-95 will-change-transform hover:text-yellow-main text-sm items-center justify-center cursor-pointer w-10 h-10 bg-[#2c2c2c] border border-[#2c2c2c] rounded-full transition-all ${i18n.resolvedLanguage === "en" && "bg-[#464646] border border-gray-main/40"}`}
@@ -45,7 +56,7 @@ const FixedButtons = () => {
       >
         {svgRender("github")}
       </a>
-    </motion.div>
+    </div>
   );
 };
 
