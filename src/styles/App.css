@@ -2,7 +2,6 @@
 @import "tailwindcss";
 
 @theme { 
-  --text-title: 2.15rem;
   --color-white-main: #f1f1f1;
   --color-black-main: #1f1f1f;
   --color-gray-main: #ccc;
@@ -18,6 +17,12 @@
   .underline-black {
        @apply underline underline-offset-8 decoration-2 decoration-[#3333335e];
    }
+   .styled-button {
+    @apply hover:bg-bg-black text-sm hover:text-yellow-main hover:border-yellow-main border border-yellow-main bg-yellow-main active:scale-95 will-change-transform transition-all select-none flex items-center justify-center cursor-pointer;
+  }
+  .text-title {
+    @apply text-2xl sm:text-3xl md:text-[2.15rem];
+  }
 }
 
 .selectable-yellow ::selection {
@@ -55,13 +60,23 @@
   left: -1rem; /* valor por defecto */
   top: 0;
   width: 2px;
-  height: 420px;
+  height: 780px;
   background-color: #4b4939;
 }
 
 @media (min-width: 40rem) {
   .timeline-line::before {
     left: -3.2rem; /* o el nuevo valor que quieras */
+  }
+}
+@media (min-width: 80rem) {
+  .timeline-line::before {
+      height: 420px;
+  }
+}
+@media (min-width: 355px) {
+  .timeline-line::before {
+      height: 722px;
   }
 }
 
