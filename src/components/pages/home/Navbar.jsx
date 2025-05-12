@@ -1,19 +1,28 @@
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import ScrollLink from "../../utils/ScrollLink";
 import gsap from "gsap";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-
-gsap.registerPlugin(ScrollToPlugin);
+import { useEffect, useRef } from "react";
 
 export const Navbar = () => {
+  const ref = useRef();
+
+  useEffect(() => {
+    gsap.fromTo(
+      ref.current,
+      { opacity: 0, y: -50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+      }
+    );
+  }, []);
+
   const [t] = useTranslation("global");
   return (
     <div className="relative w-auto h-full">
-      <motion.nav
-        initial={{ opacity: 0, y: -100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.2 }}
+      <nav
+        ref={ref}
         className="fixed top-0 left-0 right-0 hidden sm:block backdrop-blur bg-black/10 h-12 z-10"
       >
         <div className="flex justify-center w-full h-full">
@@ -45,7 +54,7 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-      </motion.nav>
+      </nav>
     </div>
   );
 };
