@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import imageImp from "../../../images/imgExports";
 import ExpTech from "./ExpTech";
@@ -6,6 +6,7 @@ import "@justinribeiro/lite-youtube";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { svgRender } from "../../utils/svgRender";
+import placeholder from "../../../images/placeholder.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -114,6 +115,7 @@ function WorkExperience() {
             </div>
             <div className="w-2/3 md:w-[40%] xl:w-[20vw] self-center rounded-sm overflow-hidden">
               <lite-youtube videoid={card.videoUrl}>
+                <img slot="image" src={placeholder} alt="Astro logo" />
                 <a
                   className="lite-youtube-fallback"
                   href={`https://youtu.be/${card.videoUrl}`}
@@ -125,8 +127,34 @@ function WorkExperience() {
           </div>
         ))}
       </div>
-      <div className="flex text-xs sm:text-xl text-center justify-center mt-10 mb-10 px-3 text-black-main/70">
-        {t("experience.more-projects")}
+      <div className="text-sm sm:text-lg sm:w-[60%] text-center mx-auto mt-10 mb-10 px-3 text-black-main/70">
+        {t("experience.more-projects-1")}&nbsp;
+        <a
+          className="underline hover:shadow-[0px_20px_20px_-8px_rgba(43,127,255,0.3)] hover:text-black-main transition-all decoration-2 decoration-blue-500 underline-offset-4"
+          href="https://www.linkedin.com/in/nazarenogutierrez1/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Linkedin
+        </a>
+        <span>&nbsp;{t("experience.more-projects-2")}&nbsp;</span>
+        <a
+          className="underline hover:shadow-[0px_20px_20px_-10px_rgba(0,0,0,0.2)] hover:text-black-main transition-all decoration-2 decoration-black/40 underline-offset-4"
+          href="https://github.com/nazagutierrez"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Github
+        </a>
+          <span>{t("experience.more-projects-3")}&nbsp;</span>
+        <a
+          className="underline hover:shadow-[0px_20px_20px_-8px_rgba(167,41,41,0.3)] hover:text-black-main transition-all decoration-2 decoration-red-500 underline-offset-4"
+          href="https://youtube.com/playlist?list=PLnf-8UYWTL45814GHsETVxVhv-_XCO9QD&si=vDVidRguMvr62uEL"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Youtube
+        </a>
       </div>
     </section>
   );
