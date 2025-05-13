@@ -16,7 +16,7 @@ const ScrollLink = ({ to, children, center = false, ...props }) => {
 
           gsap.to(window, {
             scrollTo: center ? offset : to,
-            duration: .5,
+            duration: .4,
             ease: "power2.out",
           });
         }

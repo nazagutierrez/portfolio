@@ -17,7 +17,6 @@ export function Home() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Scroll animation
       gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
@@ -31,7 +30,6 @@ export function Home() {
         ease: "none",
       });
 
-      // Intro animation (reemplazo de Framer Motion)
       gsap.fromTo(titleRef.current,
         { opacity: 0, y: -100 },
         { opacity: 1, y: 0, duration: 0.8 }
@@ -48,7 +46,7 @@ export function Home() {
 
   return (
     <section id="Home" ref={sectionRef} className="selectable-yellow text-center">
-      <div ref={mainRef}>
+      <div className="flex flex-col items-center justify-center h-[80vh]" ref={mainRef}>
         <h1
           ref={titleRef}
           className="flex justify-center px-2 text-center mb-2 text-white-main mt-5 lg:mt-32 text-4xl sm:text-5xl"
