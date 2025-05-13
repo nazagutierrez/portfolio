@@ -17,12 +17,16 @@
   .underline-black {
        @apply underline underline-offset-8 decoration-2 decoration-[#3333335e];
    }
-   .styled-button {
+  .styled-button {
     @apply hover:bg-bg-black text-sm hover:text-yellow-main hover:border-yellow-main border border-yellow-main bg-yellow-main active:scale-95 will-change-transform transition-all select-none flex items-center justify-center cursor-pointer;
   }
   .text-title {
     @apply text-2xl sm:text-3xl md:text-[2.15rem];
   }
+}
+
+.visit-web-font {
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 .selectable-yellow ::selection {
@@ -64,9 +68,9 @@
   background-color: #4b4939;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 60rem) {
   .timeline-line::before {
-    left: -3.2rem; /* o el nuevo valor que quieras */
+    left: -2rem; /* o el nuevo valor que quieras */
   }
 }
 @media (min-width: 80rem) {
@@ -76,7 +80,7 @@
 }
 @media (min-width: 355px) {
   .timeline-line::before {
-      height: 722px;
+      height: 740px;
   }
 }
 
@@ -98,20 +102,20 @@
   left: -1.08rem;
   top: 50%;
   transform: translateY(-50%);
-  width: 0.25rem;
-  height: 0.25rem;
+  width: 6px;
+  height: 6px;
   background-color: var(--color-yellow-main);
   border-radius: 50%;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 60rem) {
   .timeline-circle::before {
-    left: -3.5rem;
+    left: -53px;
   }
 }
-@media (min-width: 40rem) {
+@media (min-width: 60rem) {
   .timeline-circle::after {
-    left: -3.28rem;
+    left: -48px;
   }
 }
 
@@ -125,35 +129,8 @@ html {
   background-color: var(--color-bg-black);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .App {
   font-family: "Quicksand", sans-serif;
-}
-
-.exp-description {
-  text-wrap: pretty !important;
-  font-size: 0.8rem;
-}
-
-@media (min-width: 768px) {
-  .exp-description {
-    font-size: 0.9rem;
-  }
-}
-
-@media (min-width: 1001px) {
-  .exp-description {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .exp-description {
-    font-size: 1.05rem;
-  }
 }
 
 .exp-link {
@@ -179,22 +156,6 @@ html {
 /* Secciones */
 #Footer {
   background-color: var(--color-bg-yellow);
-}
-
-#Home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-
-#Home {
-  min-height: 750px;
-}
-
-#Home {
-  background-color: var(--color-bg-black);
 }
 
 #Footer {
