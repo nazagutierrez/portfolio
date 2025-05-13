@@ -33,10 +33,10 @@ function App() {
         { y: -40 },
         {
           y: 0,
-          duration: 1.5,
+          duration: 2,
           scrollTrigger: {
             trigger: waveBottomRef.current,
-            start: "top 20%",
+            start: "top 50%",
             end: "bottom top",
           },
         }

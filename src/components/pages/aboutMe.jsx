@@ -24,9 +24,10 @@ function AboutMe() {
       }
     );
   }, []);
+  
   const [t] = useTranslation("global");
   return (
-    <div className="h-full xl:mx-40 flex flex-col xl:flex-row selectable-yellow justify-center items-center text-center sm:gap-10 my-4 mb-10 sm:mb-4" ref={ref} id="About">
+    <div className="h-full xl:mx-30 flex flex-col xl:flex-row selectable-yellow justify-center items-center text-center sm:gap-10 my-4 mb-10 sm:mb-4" ref={ref} id="About">
       <picture className="w-[60%] sm:w-1/3">
         <img
           src={images.noBgProfile}
