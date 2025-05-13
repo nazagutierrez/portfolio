@@ -51,11 +51,11 @@ const FixedButtons = () => {
       </a>
       <a
         className="flex active:scale-95 will-change-transform hover:text-yellow-main items-center justify-center cursor-pointer w-10 h-10 bg-[#2c2c2c] rounded-full transition-all"
-        href="https://github.com/nazagutierrez"
+        href="https://wa.me/5492364329720?text=Hola!"
         target="_blank"
         rel="noreferrer"
       >
-        {svgRender("github")}
+        {svgRender("chat")}
       </a>
     </div>
   );
