@@ -4,7 +4,7 @@ import imgExports from "../../../images/imgExports";
 const TechCard = ({ img, alt }) => {
   return (
     <span className="bg-black-main rounded-md p-1">
-      <img src={img} className="w-4 object-contain" alt={alt} />
+      <img src={img} className="w-3 sm:w-4 object-contain" alt={alt} />
     </span>
   );
 };
