@@ -10,7 +10,7 @@ function Skill({ image, title }) {
           alt={title}
         />
       </div>
-      <h3 className="text-black-main mt-1 text-xs sm:text-base font-medium max-w-[140px]">{title}</h3>
+      <h3 className="text-black-main mt-1 text-xs sm:text-base font-medium max-w-[110px]">{title}</h3>
     </div>
 
   );
