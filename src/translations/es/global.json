@@ -28,15 +28,18 @@
 
   "about": {
     "title": "Sobre mi",
-    "description-a": "Desarrollador Frontend con",
-    "description-b": "+2 años",
-    "description-c": "de experiencia laboral. Creativo, curioso y en constante aprendizaje. Centrado en encontrar y resolver el problema y diseñar páginas. Capaz de hacer webs estéticas y funcionales a pedido del cliente.",
+    "description-a": "Soy un desarrollador Frontend con experiencia creando interfaces que no solo se ven bien, sino que también",
+    "description-b": "resuelven problemas reales,",
+    "description-c": "dándoles vida con animaciones y transiciones fluidas.",
 
-    "description2-a": "Aprendí conceptos básicos y avanzados de programación",
-    "description2-b": "a lo largo de 3 años de ser autodidacta",
-    "description2-c": "y estudiar en cursos, principalmente enfocados a React con Next.js. Además he aprendido backend para enrutamiento y peticiones básicas con Node y Express.",
+    "description2-a": "Creativo y siempre buscando aprender algo nuevo. Hace más de",
+    "description2-b": "2 años",
+    "description2-c": "trabajo con tecnologías como React, Next.js y TailwindCSS, y también me defiendo con tareas de backend cuando el proyecto lo necesita.",
+    
+    "description3-a": "Sigo diseños cuando hace falta (como Figma), pero lo que más me entusiasma es aportar ideas, crear experiencias y construir productos que",
+    "description3-b": "realmente funcionen.",
 
-    "description3": "¡No dudes en contactarme en cualquier momento para saber más sobre mí!",
+    "description3": "Si tu web necesita personalidad, movimiento y que se sienta viva, hablemos.",
     "experience-title": "Experiencia",
     "experience": {"exp1": "Men's House barber", "exp2": "Cookta", "exp3": "Coinbase page"},
     "experience-description": {"exp1": "Sitio web creado desde 0 para una barberia con un sistema creado por mi para agendar citas.", "exp2": "Sitio web realizado para una panadería, aplicando nuevas técnicas y un rápido desarrollo.", "exp3": "Clon estático de la página de Coinbase, hecho con HTML, Sass, Bootstrap."}

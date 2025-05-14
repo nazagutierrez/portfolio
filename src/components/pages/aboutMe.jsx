@@ -49,7 +49,11 @@ function AboutMe() {
           <span className="text-yellow-main brightness-110">{" "}{t("about.description2-b")}{" "}</span>
           {t("about.description2-c")}
         </p>
-        <p className="mt-2 text-center">
+        <p className="mt-4 text-center">
+          {t("about.description3-a")}
+          <span className="text-yellow-main brightness-110">{" "}{t("about.description3-b")}{" "}</span>
+        </p>
+        <p className="mt-4 underline underline-offset-8 decoration-1 decoration-yellow-main/50 text-center">
           {t("about.description3")}
         </p>
       </div>

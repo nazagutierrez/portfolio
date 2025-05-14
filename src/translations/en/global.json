@@ -28,15 +28,18 @@
 
   "about": {
     "title": "About me",
-    "description-a": "Frontend Developer with",
-    "description-b": "+2 years",
-    "description-c": "of work experience. Creative, curious and constantly learning. Focused on finding and solving the problem and designing pages. Able to make esthetics and functional web pages to the client's request.",
-    
-    "description2-a": "I learned basic and advanced programming concepts over",
-    "description2-b": "3 years of being self-taught",
-    "description2-c": "and studying in courses, mainly focused on React with Next.js. I have also learned backend for routing and basic requests with Node and Express.",
+    "description-a": "I'm a Frontend Developer who builds interfaces that don't just look good but also",
+    "description-b": "solve real problems,",
+    "description-c": "bringing them to life with smooth animations and transitions.",
 
-    "description3": "Feel free to reach out anytime to connect or learn more about what I do!",
+    "description2-a": "I'm creative and always eager to learn new things. For over",
+    "description2-b": "2 years,",
+    "description2-c": "I've been working with React, Next.js, and TailwindCSS, and I can handle backend tasks when the project calls for it.",
+    
+    "description3-a": "I follow designs when needed (like Figma), but what really excites me is bringing ideas to life, creating great experiences, and building products",
+    "description3-b": "that actually work.",
+
+    "description3": "If your website needs personality, motion, and that “alive” feeling — let's chat.",
     "experience-title": "Experience",
     "experience": {"exp1": "Men's House barber", "exp2": "Cookta", "exp3": "Coinbase page"},
     "experience-description": {"exp1": "Website created from 0 for a barbershop with a system created by me to schedule appointments.", "exp2": "Website made for a bakery busines, applying new techniques, and fast development.", "exp3": "Static clone of Coinbase page, maded with HTML, Sass, Bootstrap. One of my first projects"}
