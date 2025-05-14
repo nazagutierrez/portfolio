@@ -125,7 +125,7 @@ function Contact() {
       </div>
 
       <ScrollLink
-        className="absolute bottom-10 md:bottom-6 right-6 w-10 h-10 styled-button text-xs rounded-full z-10"
+        className="absolute bottom-14 xs:bottom-10 md:bottom-6 right-6 w-10 h-10 styled-button text-xs rounded-full z-10"
         to="#Home"
       >
         {svgRender("doubleArrowUp")}
