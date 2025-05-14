@@ -23,7 +23,7 @@ const FixedButtons = () => {
   return (
     <div
       ref={ref}
-      className="flex-col text-white fixed bottom-0 flex items-center justify-center gap-1 m-1 xs:m-2 z-10"
+      className="flex-col text-white fixed bottom-0 flex items-center justify-center gap-1 m-1 mb-2 xs:m-2 z-10"
     >
       <button
         className={`flex active:scale-95 will-change-transform hover:text-yellow-main text-[0.6rem] xs:text-sm items-center justify-center cursor-pointer w-7 h-7 p-1 xs:p-0 xs:w-10 xs:h-10 bg-[#2c2c2c] border border-[#2c2c2c] rounded-full transition-all ${i18n.resolvedLanguage === "en" && "bg-[#464646] border border-gray-main/40"}`}
