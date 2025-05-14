@@ -84,6 +84,7 @@ function WorkExperience() {
   const [t] = useTranslation("global");
   return (
     <section
+      // className="relative xs:h-[2000px] sm:h-[2500px] xl:h-[1400px] overflow-hidden selectable-black bg-bg-yellow w-full flex flex-col pt-14 justify-center px-2"
       className="relative overflow-hidden selectable-black bg-bg-yellow w-full flex flex-col pt-14 justify-center px-2"
       id="Experience"
     >
@@ -92,7 +93,7 @@ function WorkExperience() {
       </h1>
       <div className="relative ms-5 md:ms-6 lg:ms-0 flex flex-col gap-6 sm:gap-14" ref={expRef}>
         {cards.map((card, index) => (
-          <div className="flex flex-col xl:flex-row items-center xl:items-start justify-center gap-5" key={index}>
+          <div className="flex flex-col xl:flex-row items-center justify-center gap-5" key={index}>
             <div className="flex flex-col xl:ms-0 timeline-line relative items-start justify-center max-w-[800px]">
               <h2 className="bg-black-main px-2 rounded mb-1 text-gray-main text-xs">
                 {t(`experience.exp-period-${index}`)}
@@ -102,20 +103,20 @@ function WorkExperience() {
               </h2>
               <div className="flex text-xs sm:text-sm items-center justify-center mb-2">
                 <h3>at&nbsp;</h3>
-                <a href={card.url} target="_blank" rel="noreferrer" className="underline-black underline-offset-1">{" "} {card.title}</a>
+                <a href={card.url} target="_blank" rel="noreferrer" className="underline-black underline-offset-1">
+                  {" "} {card.title}
+                </a>
                 <img
                   className="ms-1 w-4 rounded bg-black-main"
                   src={card.image}
                   alt="Brand logo mobile"
                 />
               </div>
-              <div className="flex items-center">
-                <div className="flex flex-col items-center ps-4">
-                  <p className="text-pretty text-sm sm:text-base lg:leading-6 mb-2">
-                    {t(`experience.exp-description-${index}`)}
-                  </p>
-                  <ExpTech expName={card.id} />
-                </div>
+              <div className="flex flex-col items-center ps-4">
+                <p className="text-pretty text-sm sm:text-base lg:leading-6 mb-2">
+                  {t(`experience.exp-description-${index}`)}
+                </p>
+                <ExpTech expName={card.id} />
               </div>
             </div>
             <div className="w-2/3 md:w-1/2 lg:w-[40%] xl:w-[20vw] self-center">
@@ -128,16 +129,22 @@ function WorkExperience() {
                   </lite-youtube>  
                 </div>
               }
-              <a 
-                href={card.url}
-                target="_blank"
-                rel="noreferrer"
-                className="group block text-center active:scale-95 hover:opacity-95 transition-all will-change-transform pt-px pb-0.5 md:pt-0 md:pb-px mx-auto text-white-main text-xs sm:text-sm md:text-base bg-black-main rounded-sm mt-2"
-              >
-                <h2 className="tracking-wide visit-web-font group-hover:text-yellow-main/90 group-hover:decoration-yellow-main/90 transition-all underline decoration-1 decoration-white-main/60 underline-offset-3">
-                  VISIT THE WEBSITE
+              {card.asset === "video" ?
+                <a 
+                  href={card.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group block text-center active:scale-95 hover:opacity-95 transition-all will-change-transform pt-px pb-0.5 md:pt-0 md:pb-px mx-auto text-white-main text-xs sm:text-sm md:text-base bg-black-main rounded-sm mt-2"
+                >
+                  <h2 className="tracking-wide visit-web-font group-hover:text-yellow-main/90 group-hover:decoration-yellow-main/90 transition-all underline decoration-1 decoration-white-main/60 underline-offset-3">
+                    VISIT THE WEBSITE
+                  </h2>
+                </a>
+                :
+                <h2 className="tracking-wide bg-black-main rounded-sm mt-2 visit-web-font group-hover:text-yellow-main/90 group-hover:decoration-yellow-main/90 pt-px pb-0.5 md:pt-0 md:pb-px text-center text-white-main text-xs sm:text-sm md:text-base">
+                  CERTIFICATE
                 </h2>
-              </a>
+              }
             </div>
           </div>
         ))}
