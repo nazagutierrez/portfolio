@@ -8,6 +8,8 @@
   --color-bg-yellow: #C09A27;
   --color-yellow-main: #cea425;
   --color-bg-black: #1f1f1f;
+
+  --breakpoint-xs: 25rem;
 }
 
 @layer components {
