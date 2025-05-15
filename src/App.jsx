@@ -50,16 +50,16 @@ function App() {
       <SmoothScrollWrapper>
         <div className="App relative overflow-hidden">
           <Home />
-          <img src={waveYellowSvg} ref={waveTopRef} alt="wave" className="w-[100dvw] pointer-events-none select-none -my-px sm:-my-3" />
+          <img src={waveYellowSvg} ref={waveTopRef} alt="wave" className="wave-section" />
 
           <WorkExperience />
-          <img src={waveYellowSvg} alt="wave" className="w-[100dvw] rotate-180 pointer-events-none select-none -my-px sm:-my-3" />
+          <img src={waveYellowSvg} alt="wave" className="rotate-180 wave-section" />
 
           <AboutMe />
-          <img src={waveYellowSvg} alt="wave" className="w-[100dvw] pointer-events-none select-none -my-px sm:-my-3" />
+          <img src={waveYellowSvg} alt="wave" className="wave-section" />
 
           <Skills />
-          <img ref={waveBottomRef} src={waveYellowSvg} alt="wave" className="w-[100dvw] rotate-180 pointer-events-none select-none -my-px sm:-my-3" />
+          <img ref={waveBottomRef} src={waveYellowSvg} alt="wave" className="rotate-180 drop-shadow wave-section" />
 
           <Contact />
         </div>
