@@ -121,7 +121,7 @@ function WorkExperience() {
             </div>
             <div className="w-2/3 md:w-1/2 lg:w-[40%] xl:w-[20vw] self-center">
               {card.asset === "image" ?
-                <img src={card.url} className="aspect-video rounded-sm" alt="Image placeholder" />
+                <img src={card.url} className="aspect-video rounded-sm justify-self-center" alt="Image placeholder" />
                 : 
                 <div className="rounded-sm overflow-hidden"> 
                   <lite-youtube videoid={card.videoUrl}>
@@ -141,9 +141,16 @@ function WorkExperience() {
                   </h2>
                 </a>
                 :
-                <h2 className="tracking-wide bg-black-main rounded-sm mt-2 visit-web-font group-hover:text-yellow-main/90 group-hover:decoration-yellow-main/90 pt-px pb-0.5 md:pt-0 md:pb-px text-center text-white-main text-xs sm:text-sm md:text-base">
-                  CERTIFICATE
-                </h2>
+                <a 
+                  href="https://drive.google.com/file/d/1EGf9XyQR_KmwOpz8yH-R2sYMhqV4PyVB/view?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group block text-center active:scale-95 hover:opacity-95 transition-all will-change-transform pt-px pb-0.5 md:pt-0 md:pb-px mx-auto text-white-main text-xs sm:text-sm md:text-base bg-black-main rounded-sm mt-2"
+                >
+                  <h2 className="tracking-wide visit-web-font group-hover:text-yellow-main/90 group-hover:decoration-yellow-main/90 transition-all underline decoration-1 decoration-white-main/60 underline-offset-3">
+                    CERTIFICATE
+                  </h2>
+                </a>
               }
             </div>
           </div>
