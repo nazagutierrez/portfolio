@@ -32,7 +32,7 @@ function AboutMe() {
         <img
           src={images.noBgProfile}
           alt="profile"
-          className="rounded-full w-full lg:mr-5 object-cover"
+          className="rounded-full aspect-[427/584] w-full lg:mr-5 object-cover"
         />
       </picture>
       <div className="lg:w-2/3 sm:px-5 md:px-10 px-2 flex flex-col mt-5 text-white-main">
