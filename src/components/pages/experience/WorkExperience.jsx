@@ -44,7 +44,7 @@ let cards = [
     videoUrl: "1_Gtg7te6B8",
     period: "2022 - 2023",
     asset: "video",
-    url: "https://github.com/nazagutierrez/mens-house-barber",
+    url: "https://menshouse-barber.web.app/",
     image: imageImp.mensHouseLogo,
   },
 ];
