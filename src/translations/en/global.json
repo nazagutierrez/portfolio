@@ -3,7 +3,7 @@
     "frontend": "Front-end Developer",
     "challenges": "I turn challenges into solutions.",
     "description-1": "With",
-    "description-2": " +2 year ",
+    "description-2": " 3 year ",
     "description-3": "of experience using React, Typescript y Next.js.",
     "description-4": "Open my resume!",    
     "nav-link-1": "Home",
@@ -15,12 +15,12 @@
 
   "experience": {
     "exp-title": "My work experience",
-    "exp-period-0": "2024 - Present",
-    "exp-period-1": "2023 - 2024",
-    "exp-period-2": "2022 - 2023",
-    "exp-description-0": "I work as a Frontend Developer at TPEOficial, a startup delivering software services and AI tools. My role includes frontend development, email creation, and contributing creative ideas, alongside a collaborative team with strong communication.",
-    "exp-description-1": "Five-week professional internship focused on teamwork, communication, and programming. Developed an MVP, web styles, and data structures from scratch, collaborating on backend/frontend, QA, design, and daily code reviews.",
-    "exp-description-2": "As a web developer, I built a responsive booking system with React and TailwindCSS, managed the backend with Firebase, and created an admin panel. This streamlined operations and reduced the manager's workload.",
+    "exp-period-0": "Jun. 2025 - Present",
+    "exp-period-1": "Aug. 2024 - Jul. 2025",
+    "exp-period-2": "Jan. 2023 - Jul. 2024",
+    "exp-description-0": "Collaborated on the development of the Rave Dates events platform (Colombia), building role-based views, authentication, payment gateways, and complex API integrations. Delivered pixel-perfect implementations from Figma with 100% typed TypeScript.",
+    "exp-description-1": "I worked as a Frontend Developer at TPEOficial, a startup delivering software services and AI tools. My role includes frontend development, email creation, and contributing creative ideas, alongside a collaborative team with strong communication.",
+    "exp-description-2": "As a Freelance Frontend Developer, I have built applications and websites for various clients, developing booking systems, e-commerce platforms, and admin dashboards using React, Next.js, TailwindCSS, and Firebase, improving processes and enhancing the digital experience for businesses.",
     "more-projects-1": "Check out more on",
     "more-projects-2": "or",
     "more-projects-3": ", and see other demos on my"
@@ -33,7 +33,7 @@
     "description-c": "bringing them to life with smooth animations and transitions.",
 
     "description2-a": "I'm creative and always eager to learn new things. For over",
-    "description2-b": "2 years,",
+    "description2-b": "3 years,",
     "description2-c": "I've been working with React, Next.js, and TailwindCSS, and I can handle backend tasks when the project calls for it.",
     
     "description3-a": "I follow designs when needed (like Figma), but what really excites me is bringing ideas to life, creating great experiences, and building products",

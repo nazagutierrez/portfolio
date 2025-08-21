@@ -17,6 +17,8 @@ import noCountry from "./no-country.webp";
 import typescript from "./typescript.svg";
 import astro from "./astro.svg"
 import gsap from "./gsap.svg"
+import zergex from "./zergex.png"
+import docker from "./docker.svg"
 
 export default {
   reactImg,
@@ -37,5 +39,7 @@ export default {
   mensHouseLogo,
   typescript,
   astro,
-  gsap
+  gsap,
+  zergex,
+  docker
 };

@@ -12,40 +12,27 @@ gsap.registerPlugin(ScrollTrigger);
 
 let cards = [
   {
+    id: "zergex",
+    title: "Zergex",
+    videoUrl: "qXx15jxuEfM",
+    asset: "video",
+    url: "https://www.linkedin.com/company/zergex/",
+    image: imageImp.zergex,
+  },
+  {
     id: "tpeo",
     title: "TPEOficial",
     videoUrl: "qkA1QbCKzRg",
-    period: "2024 - Present",
     asset: "video",
     url: "https://dymo.tpeoficial.com/",
     image: imageImp.tpeo,
   },
-  // {
-  //   id: "nordicaps",
-  //   title: "Nordicaps",
-  //   videoUrl: "qkA1QbCKzRg",
-  //   period: "2025 - Present",
-  //   asset: "video",
-  //   url: "https://dymo.tpeoficial.com/",
-  //   image: imageImp.tpeo,
-  // },
-  {
-    id: "no-country",
-    title: "No country",
-    videoUrl: "DjSyUzYUuTM",
-    period: "2023 - 2024",
-    asset: "image",
-    url: noCountryProof,
-    image: imageImp.noCountry,
-  },
   {
     id: "mens-house-barber",
-    title: "Men's House barber",
+    title: "Freelance | Self-Employed",
     videoUrl: "1_Gtg7te6B8",
-    period: "2022 - 2023",
     asset: "video",
-    url: "https://menshouse-barber.web.app/",
-    image: imageImp.mensHouseLogo,
+    url: "https://www.youtube.com/playlist?list=PLnf-8UYWTL45814GHsETVxVhv-_XCO9QD",
   },
 ];
 
@@ -106,11 +93,14 @@ function WorkExperience() {
                 <a href={card.url} target="_blank" rel="noreferrer" className="underline-black underline-offset-1">
                   {" "} {card.title}
                 </a>
-                <img
-                  className="ms-1 w-4 rounded bg-black-main"
-                  src={card.image}
-                  alt="Brand logo mobile"
-                />
+                {
+                  card.image &&
+                    <img
+                      className="ms-1 w-4 rounded bg-black-main"
+                      src={card.image}
+                      alt="Brand logo mobile"
+                    />
+                }
               </div>
               <div className="flex flex-col items-center ps-4">
                 <p className="text-pretty text-sm sm:text-base lg:leading-6 mb-2">

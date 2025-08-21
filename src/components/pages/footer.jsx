@@ -6,7 +6,7 @@ function Footer() {
   const date = `${current.getFullYear()}`;
 
   return (
-    <div className="h-10 text-center px-4 text-gray-main/90 text-xs absolute selectable-yellow bottom-3 xs:bottom-0 flex space-y-2 justify-center align-center w-full gap-4">
+    <div className="h-10 text-center right-0 px-4 text-gray-main/90 text-xs absolute selectable-yellow bottom-3 xs:bottom-0 flex space-y-2 justify-center align-center w-full gap-4">
       <div className="self-center">
         <span>© Copyright </span>
         <span>{date}.</span>

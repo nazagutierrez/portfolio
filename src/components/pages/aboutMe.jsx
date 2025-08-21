@@ -35,7 +35,7 @@ function AboutMe() {
           className="rounded-full aspect-[427/584] w-full lg:mr-5 object-cover"
         />
       </picture>
-      <div className="lg:w-2/3 sm:px-5 md:px-10 px-2 flex flex-col mt-5 text-white-main">
+      <div className="lg:w-2/3 text-sm xs:text-base sm:px-5 md:px-10 px-2 flex flex-col mt-5 text-white-main">
         <h3 className="text-title text-center underline-yellow"> 
           {t("about.title")}
         </h3>

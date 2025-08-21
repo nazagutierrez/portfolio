@@ -3,7 +3,7 @@
     "frontend": "Desarrollador Frontend",
     "challenges": "Transformo los desafíos en soluciones.",
     "description-1": "Con",
-    "description-2": " +2 años ",
+    "description-2": " 3 años ",
     "description-3": "de experiencia utilizando React, Typescript y Next.js.",
     "description-4": "Abre mi CV!",
     "nav-link-1": "Inicio",
@@ -15,12 +15,12 @@
 
   "experience": {
     "exp-title": "Mi experiencia laboral",
-    "exp-period-0": "2024 - Presente",
-    "exp-period-1": "2023 - 2024",
-    "exp-period-2": "2022 - 2023",
-    "exp-description-0": "Trabajo como Desarrollador Frontend en TPEOficial, una startup que ofrece servicios de software y herramientas de IA. Mis responsabilidades incluyen desarrollo frontend, creación de emails y la contribución de ideas creativas, junto a un equipo colaborativo con fuerte comunicación.",
-    "exp-description-1": "Práctica profesional de 5 semanas enfocada en trabajo en equipo, comunicación y programación, desarrollando un MVP desde cero con backend, frontend, QA, diseño y revisiones de código diarias.",
-    "exp-description-2": "Como desarrollador web, construí un sistema de reservas responsive con React y TailwindCSS, gestioné el backend con Firebase y creé un panel de admin. Esto redujo y optimizó la carga de trabajo del gerente.",
+    "exp-period-0": "Jun. 2025 - Presente",
+    "exp-period-1": "Ago. 2024 - Jul. 2025",
+    "exp-period-2": "Ene. 2023 - Jul. 2024",
+    "exp-description-0": "Colaboré en el desarrollo de la plataforma de eventos Rave Dates (Colombia), creando vistas por rol, autenticación, pasarelas de pago e integración de APIs complejas. Implementación pixel-perfect desde Figma con TypeScript 100% tipado.",
+    "exp-description-1": "Trabajé como Desarrollador Frontend en TPEOficial, una startup que ofrece servicios de software y herramientas de IA. Mis responsabilidades incluyen desarrollo frontend, creación de emails y la contribución de ideas creativas, junto a un equipo colaborativo con fuerte comunicación.",
+    "exp-description-2": "Como Desarrollador Frontend Freelance he creado aplicaciones y sitios web para distintos clientes, desarrollando sistemas de reservas, e-commerce y paneles de administración con React, Next.js, TailwindCSS y Firebase, mejorando procesos y la experiencia digital de negocios.",
     "more-projects-1": "Ver mas trabajos en",
     "more-projects-2": "o",
     "more-projects-3": ", y mirá otras demos en mi"
@@ -33,7 +33,7 @@
     "description-c": "dándoles vida con animaciones y transiciones fluidas.",
 
     "description2-a": "Creativo y siempre buscando aprender algo nuevo. Hace más de",
-    "description2-b": "2 años",
+    "description2-b": "3 años",
     "description2-c": "trabajo con tecnologías como React, Next.js y TailwindCSS, y también me defiendo con tareas de backend cuando el proyecto lo necesita.",
     
     "description3-a": "Sigo diseños cuando hace falta (como Figma), pero lo que más me entusiasma es aportar ideas, crear experiencias y construir productos que",

@@ -29,9 +29,14 @@ const ExpTech = ({ expName }) => {
           <TechCard img={imgExports.firebase} alt="firebase" />
         </>
       )}
-      {expName === "no-country" ? "" : ""}
       {expName === "tpeo" && (
         <TechCard img={imgExports.astro} alt="firebase" />
+      )}
+      {expName === "zergex" && (
+        <>
+          <TechCard img={imgExports.nextjs} alt="nextjs" />
+          <TechCard img={imgExports.docker} alt="nextjs" />
+        </>
       )}
       {sharedTech()}
     </div>

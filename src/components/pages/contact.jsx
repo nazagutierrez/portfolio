@@ -21,7 +21,7 @@ const ContactButton = ({ text = "", type, copiedText, handleCopy, t }) => {
 
   return (
     <a
-      className="styled-button rounded-sm w-20 py-px gap-2" 
+      className="styled-button rounded-sm w-20 px-1 py-px gap-1" 
       href={href || "#"}
       target="_blank"
       rel="noreferrer"
