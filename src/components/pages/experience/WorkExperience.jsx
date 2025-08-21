@@ -109,7 +109,7 @@ function WorkExperience() {
                 <ExpTech expName={card.id} />
               </div>
             </div>
-            <div className="w-2/3 md:w-1/2 lg:w-[40%] xl:w-[20vw] self-center">
+            <div className="w-[250px] xs:w-[300px] sm:w-[350px] md:w-[350px] lg:w-[400px] xl:w-[400px] self-center">
               {card.asset === "image" ?
                 <img src={card.url} className="aspect-video rounded-sm justify-self-center" alt="Image placeholder" />
                 : 
