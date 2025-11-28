@@ -16,7 +16,7 @@ let cards = [
     title: "Zergex",
     videoUrl: "qXx15jxuEfM",
     asset: "video",
-    url: "https://www.linkedin.com/company/zergex/",
+    url: "https://ravedates.proxising.com/",
     image: imageImp.zergex,
   },
   {
