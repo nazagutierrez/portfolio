@@ -6,7 +6,6 @@ import "@justinribeiro/lite-youtube";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import placeholder from "../../../images/placeholder.webp";
-import noCountryProof from "../../../images/noCountryProof.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,7 +37,6 @@ let cards = [
 
 function WorkExperience() {
   const titleRef = useRef();
-  const expRef = useRef();
 
   useEffect(() => {
     gsap.fromTo(
@@ -54,18 +52,29 @@ function WorkExperience() {
         },
       }
     );
-    gsap.fromTo(
-      expRef.current,
-      { x: -100 },
-      {
-        x: 0,
-        duration: 0.8,
-        scrollTrigger: {
-          trigger: expRef.current,
-          start: "top 80%",
-        },
-      }
-    );
+
+    const cards = gsap.utils.toArray(".exp-card");
+
+    cards.forEach((card) => {
+        gsap.fromTo(
+          card,
+          {
+            opacity: 0,
+            y: 80,
+          },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.7,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: card,
+              start: "top 80%",
+              once: true,
+            },
+          }
+        );
+      });
   }, []);
 
   const [t] = useTranslation("global");
@@ -78,9 +87,9 @@ function WorkExperience() {
       <h1 className="text-title mb-14 justify-center text-center underline-black" ref={titleRef}>
         {t("experience.exp-title")}
       </h1>
-      <div className="relative ms-5 md:ms-6 lg:ms-0 flex flex-col gap-6 sm:gap-14" ref={expRef}>
+      <div className="relative ms-5 md:ms-6 lg:ms-0 flex flex-col gap-6 sm:gap-14">
         {cards.map((card, index) => (
-          <div className="flex flex-col xl:flex-row items-center justify-center gap-5" key={index}>
+          <div className="exp-card flex flex-col xl:flex-row items-center justify-center gap-5" key={index}>
             <div className="flex flex-col xl:ms-0 timeline-line relative items-start justify-center max-w-[800px]">
               <h2 className="bg-black-main px-2 rounded mb-1 text-gray-main text-xs">
                 {t(`experience.exp-period-${index}`)}

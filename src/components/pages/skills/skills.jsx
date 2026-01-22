@@ -83,32 +83,26 @@ let skills = [
 
 export function Skills() {
   const skillsRef = useRef();
-  const skillsTitleRef = useRef();
 
   useEffect(() => {
+    const items = gsap.utils.toArray(".skill-item");
+
     gsap.fromTo(
-      skillsTitleRef.current,
-      { opacity: 0, x: -100 },
+      items,
+      {
+        opacity: 0,
+        y: 40,
+      },
       {
         opacity: 1,
-        x: 0,
-        duration: 0.5,
-        scrollTrigger: {
-          trigger: skillsTitleRef.current,
-          start: "top 80%",
-        },
-      }
-    );
-    gsap.fromTo(
-      skillsRef.current,
-      { opacity: 0, x: -100 },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 0.8,
+        y: 0,
+        duration: 0.6,
+        ease: "power3.out",
+        stagger: 0.08, // 👈 pequeño stagger
         scrollTrigger: {
           trigger: skillsRef.current,
           start: "top 80%",
+          once: true,
         },
       }
     );
@@ -119,13 +113,13 @@ export function Skills() {
   return (
     <section className="flex flex-col justify-center selectable-black items-center bg-bg-yellow pb-10 sm:pb-12 sm:py-12" id="Skills">
       <div className="mt-5 lg:mt-0">
-        <h1 className="text-center text-title mb-4 sm:mt-0 mt-5 underline-black" ref={skillsTitleRef}>
+        <h1 className="text-center text-title mb-4 sm:mt-0 mt-5 underline-black">
           {t("skills.title")}
         </h1>
       </div>
       <div className="flex mt-3 flex-wrap gap-2 justify-center mx-2 sm:mx-10 xl:mx-40" ref={skillsRef}>
         {skills.map((skill) => (
-          <div key={skill.id}>
+          <div key={skill.id} className="skill-item opacity-0">
             <Skill image={skill.image} title={skill.title} />
           </div>
         ))}
