@@ -16,7 +16,7 @@ let cards = [
     title: "Zergex",
     videoUrl: "qXx15jxuEfM",
     asset: "video",
-    url: "https://ravedates.proxising.com/",
+    url: "https://rave-dates.vercel.app/",
     image: imageImp.zergex,
   },
   {
